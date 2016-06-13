@@ -1,0 +1,293 @@
+﻿@model IEnumerable<InfringementWeb.infringement>
+@{
+    ViewBag.Title = "Infringements";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+
+    @using (Html.BeginForm("Index", "Infringements"))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="row">
+            <div class="col-md-4">
+                Search for Infringement Number
+            </div>
+            <div class="col-md-3">
+                @Html.TextBox("SearchInfringeNumber", null, new { @class = "form-control", placeholder = "Search" })
+            </div>
+            <div class="col-md-5">
+                @*<input type="submit" value="Search" class="btn btn-default" />*@
+                <input type="submit" id="Submit" name="Submit" value="Search By Number" class="btn btn-default" />
+            </div>
+
+        </div>}
+</div>
+<br />
+<div class="row">
+    <div class="col-md-4">
+        Search for Rego Number
+    </div>
+    @using (Html.BeginForm("Index", "Infringements"))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="col-md-3">
+            @Html.TextBox("SearchRegoNumber", null, new { @class = "form-control", placeholder = "Search" })
+        </div>
+        <div class="col-md-5">
+            @*<input type="submit" value="Search" class="btn btn-default" />*@
+            <input type="submit" id="Submit" name="Submit" value="Search By Rego" class="btn btn-default" />
+        </div>
+    }
+</div>
+<br />
+<div class="row">
+    @using (Html.BeginForm("Index", "Infringements"))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="col-md-2">
+            Infringement From
+        </div>
+        <div class="col-md-3">
+            <div class='input-group date' id='datepicker1'>
+                <input type='text' class="form-control datepicker" id="SearchFrom" name="SearchFrom" value="@ViewBag.StartDate" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            Infringement To
+        </div>
+        <div class="col-md-3">
+            <div class='input-group date' id='datepicker2'>
+                <input type='text' class="form-control datepicker" id="SearchTo" name="SearchTo" value="@ViewBag.ToDate" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            @*<input type="submit" value="Show" class="btn btn-default" />*@
+            <input type="submit" id="Submit" name="Submit" value="Search By Date" class="btn btn-default" />
+        </div>
+    }
+</div>
+<br />
+
+<div class="row">
+    <div class="col-md-10">
+        <ul><li>Put * at end for wild card searching. Ex: abc*</li></ul>
+    </div>
+    <div class="col-md-2">
+        @*@Html.ActionLink("Create New", "Create")*@
+        <input type="submit" value="Add Infringement" class="btn btn-primary right" onclick="window.location.assign('/Infringements/Create');" />
+    </div>
+</div>
+
+<br />
+<hr />
+<div class="table-responsive">
+
+    <table class="table table-striped">
+        <tr>
+            <th>
+                @*@Html.DisplayNameFor(model => model.Number)*@
+
+                @Html.ActionLink("Infringement Number", "Index", new { sortOrder = "Number" })
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.Rego)*@
+                @Html.ActionLink("Rego", "Index", new { sortOrder = "Rego" })
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.parking_location.city.name)*@
+                @Html.ActionLink("City", "Index", new { sortOrder = "cityname" })
+            </th>
+            <th class="hidden-xs hidden-md">
+                @*@Html.DisplayNameFor(model => model.parking_location.Name)*@
+                @Html.ActionLink("Car Park", "Index", new { sortOrder = "location" })
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.IncidentTime)*@
+                @Html.ActionLink("Incident Date & Time", "Index", new { sortOrder = "IncidentTime" })
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.infringementtype.Type)*@
+                @Html.ActionLink("Infringement Type", "Index", new { sortOrder = "infringementtype" })
+            </th>
+            <th>
+                @Html.ActionLink("Amount", "Index", new { sortOrder = "Amount" })
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.StatusId)*@
+
+                @Html.ActionLink("Status", "Index", new { sortOrder = "Status" })
+
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.Comment)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Model)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.User)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UploadTime)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Latitude)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Longitude)
+                </th>*@
+            <th style="min-width:70px;">
+                Actions
+            </th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Number)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rego)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.parking_location.city.name)
+                </td>
+                <td class="hidden-xs hidden-md">
+                    @Html.DisplayFor(modelItem => item.parking_location.Name)
+                </td>
+                <td>
+                    @string.Format("{0:dd/MM/yyyy hh:mm}", item.IncidentTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.infringementtype.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Amount)
+                </td>
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.make.Name)
+                    </td>*@
+                <td>
+                    @switch (item.StatusId)
+                    {
+                        case 1:
+                        <span>Pending</span>
+                            break;
+                        case 2:
+                        <span>Paid</span>
+                            break;
+                        case 3:
+                        <span>Objected</span>
+                            break;
+                        case 4:
+                        <span>Cancelled</span>
+                            break;
+                    }
+                </td>
+                @*
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Comment)
+                    </td><td>
+                        @Html.DisplayFor(modelItem => item.Model)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.User)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UploadTime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Latitude)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Longitude)
+                    </td>*@
+                <td>
+                    @Html.ActionLink(" ", "Edit", new { id = item.Id }, new { @class = "glyphicon glyphicon-edit", @title = "Edit" }) |
+                    @Html.ActionLink(" ", "Details", new { id = item.Id }, new { @class = "glyphicon glyphicon-info-sign", @title = "Details" }) |
+                    @Html.ActionLink(" ", "Delete", new { id = item.Id }, new { @class = "glyphicon glyphicon-trash", @title = "Delete" })
+                </td>
+            </tr>
+        }
+    </table>
+
+</div>
+
+<!– Page links below -–>
+@if (ViewBag.InitialSearch != null)
+{
+<p style="text-align:center">
+    <table class="table table-striped">
+        <tr>
+            <td style="width:10%">
+                @if(ViewBag.PreviousPage > 0)
+                {
+                    <a href="@Url.Action("Index","Infringements", new { page = ViewBag.PreviousPage, sortOrder="NA" } )">Previous</a>
+                }
+                else
+                {
+                <span >Previous</span>
+                }
+            </td>
+            <td style="width:60%; text-align:center">
+                @for(int i= 1; i<=ViewBag.TotalPages; i++)
+                {
+                    if(ViewBag.CurrentPage == i)
+                        {
+                            <span style="color:red"> @i </span>
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("Index","Infringements", new { page = i, sortOrder="NA" } )">@i</a>
+                        }
+                }
+            </td>
+            <td style="width:10%">
+
+                @if(ViewBag.NextPage > 0)
+                {
+                    <a href="@Url.Action("Index","Infringements", new { page = ViewBag.NextPage, sortOrder="NA" } )">Next</a>
+                }
+                else
+                {
+                    <span>Next</span>
+                }
+
+            </td>
+            <td style="width:20%">
+                @Html.DropDownList("RecPerPage", ViewBag.lstPageSize as IEnumerable<SelectListItem>,  new { @class = "form-control" })
+
+            </td>
+        </tr>
+    </table>
+</p>
+}
+
+@*@Html.ActionLink("Test Infringement", "/TestWebMethods/Index")*@
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/dateTimePicker")
+    @Scripts.Render("~/bundles/jqueryui")
+}
+<script type="text/javascript">
+    $(document).ready(function () {
+        if ('@TempData["InfringementCreated"]' != "") {
+            alert('Infringement created successfully.');
+        }
+        if ('@TempData["InfringementUpdated"]' != "") {
+            alert('Infringement updated successfully.');
+        }
+    });
+</script>

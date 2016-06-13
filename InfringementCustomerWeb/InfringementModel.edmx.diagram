@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ad18791858404236a2edb8ee23a0a6d7" Name="Diagram1">
+        <EntityTypeShape EntityType="infringementModel.carmodel" Width="1.5" PointX="3" PointY="5.75" />
+        <EntityTypeShape EntityType="infringementModel.city" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="infringementModel.contactu" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="infringementModel.country" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="infringementModel.infringement" Width="1.5" PointX="6" PointY="2.75" />
+        <EntityTypeShape EntityType="infringementModel.infringement_number_encryption" Width="1.5" PointX="2.75" PointY="8.75" />
+        <EntityTypeShape EntityType="infringementModel.infringement_payment" Width="1.5" PointX="8.75" PointY="8.75" />
+        <EntityTypeShape EntityType="infringementModel.infringementpicture" Width="1.5" PointX="8.25" PointY="5.625" />
+        <EntityTypeShape EntityType="infringementModel.infringementstatu" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="infringementModel.infringementtype" Width="1.5" PointX="3.75" PointY="2.75" />
+        <EntityTypeShape EntityType="infringementModel.make" Width="1.5" PointX="0.75" PointY="5.75" />
+        <EntityTypeShape EntityType="infringementModel.role" Width="1.5" PointX="10.75" PointY="3.75" />
+        <EntityTypeShape EntityType="infringementModel.user" Width="1.5" PointX="10.75" PointY="6.75" />
+        <AssociationConnector Association="infringementModel.a" />
+        <AssociationConnector Association="infringementModel.a2" />
+        <AssociationConnector Association="infringementModel.b1" />
+        <AssociationConnector Association="infringementModel.c1" />
+        <EntityTypeShape EntityType="infringementModel.parking_location" Width="1.5" PointX="3" PointY="11.5" />
+        <AssociationConnector Association="infringementModel.a3" />
+        <AssociationConnector Association="infringementModel.a1" />
+        <EntityTypeShape EntityType="infringementModel.emailid" Width="1.5" PointX="8.375" PointY="11.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

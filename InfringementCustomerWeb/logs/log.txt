@@ -1,0 +1,383 @@
+INFO  2016-03-08 11:04:06,323  1734ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-08 11:04:13,821  9232ms InfringementController SearchList         - Search for infringement
+INFO  2016-03-08 11:04:15,395 10806ms InfringementController SearchList         - Search for infringement
+INFO  2016-03-08 11:04:22,102 17513ms InfringementController SearchList         - Search for infringement
+INFO  2016-03-08 11:04:22,103 17514ms InfringementController SearchList         - Search on rego number
+INFO  2016-03-09 22:39:53,161   590ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-09 22:40:12,681 20109ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-09 22:40:30,078 37507ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-17 22:53:35,361  3652ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-17 22:54:11,769 40060ms InfringementController SearchList         - Search for infringement
+INFO  2016-03-17 22:54:12,007 40298ms InfringementController SearchList         - Search on infringement number
+INFO  2016-03-17 22:57:46,813   525ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-17 22:57:57,730 11442ms InfringementController SearchList         - Search for infringement
+INFO  2016-03-17 22:57:58,008 11720ms InfringementController SearchList         - Search on infringement number
+INFO  2016-03-17 22:59:15,135 88847ms InfringementController nesAcknowledgement - Acknowledgement of payment page
+INFO  2016-03-17 22:59:58,757 132469ms InfringementController nesAcknowledgement - Payment declined.
+INFO  2016-03-17 23:28:17,912   947ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-17 23:28:23,718  6753ms InfringementController SearchList         - Search for infringement
+INFO  2016-03-17 23:28:23,917  6952ms InfringementController SearchList         - Search on infringement number
+INFO  2016-03-17 23:30:00,169 103205ms InfringementController TransCancelled     - Acknowledgement of payment page for POLI Cancelled
+INFO  2016-03-17 23:30:00,171 103207ms InfringementController TransCancelled     - POLI Payment Cancelled.
+INFO  2016-03-18 05:55:41,927  1766ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-18 05:56:16,255 36093ms InfringementController SearchList         - Search for infringement
+INFO  2016-03-18 05:56:16,891 36730ms InfringementController SearchList         - Search on infringement number
+INFO  2016-03-18 05:59:52,164 252002ms InfringementController SearchList         - Search for infringement
+INFO  2016-03-18 05:59:52,164 252002ms InfringementController SearchList         - Search on infringement number
+INFO  2016-03-18 06:47:02,926   389ms InfringementController Search             - Render page to search for infrngements
+WARN  2016-03-18 06:47:03,666  1128ms InfringementController OnException        - Error :E:\Personal\Arif\Source\Github\ParkingWebsite\Infringement-master\InfringementCustomerWeb\Views\Infringement\Search.cshtml(74): error CS1009: Unrecognized escape sequence
+INFO  2016-03-18 06:47:32,997 30460ms InfringementController Search             - Render page to search for infrngements
+WARN  2016-03-18 06:47:33,621 31084ms InfringementController OnException        - Error :E:\Personal\Arif\Source\Github\ParkingWebsite\Infringement-master\InfringementCustomerWeb\Views\Infringement\Search.cshtml(74): error CS1009: Unrecognized escape sequence
+INFO  2016-03-18 06:47:37,022 34485ms InfringementController Search             - Render page to search for infrngements
+WARN  2016-03-18 06:47:37,023 34486ms InfringementController OnException        - Error :E:\Personal\Arif\Source\Github\ParkingWebsite\Infringement-master\InfringementCustomerWeb\Views\Infringement\Search.cshtml(74): error CS1009: Unrecognized escape sequence
+INFO  2016-03-18 06:48:25,926   546ms InfringementController Search             - Render page to search for infrngements
+WARN  2016-03-18 06:48:26,599  1218ms InfringementController OnException        - Error :E:\Personal\Arif\Source\Github\ParkingWebsite\Infringement-master\InfringementCustomerWeb\Views\Infringement\Search.cshtml(74): error CS1009: Unrecognized escape sequence
+INFO  2016-03-18 06:49:13,783  2412ms InfringementController Search             - Render page to search for infrngements
+WARN  2016-03-18 06:49:14,891  3520ms InfringementController OnException        - Error :E:\Personal\Arif\Source\Github\ParkingWebsite\Infringement-master\InfringementCustomerWeb\Views\Infringement\Search.cshtml(74): error CS1009: Unrecognized escape sequence
+INFO  2016-03-18 06:49:49,355  2308ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-18 06:50:07,246 20199ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-18 06:50:32,534 45487ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-18 06:50:48,304 61257ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-18 06:51:27,436 100389ms InfringementController Search             - Render page to search for infrngements
+WARN  2016-03-18 06:51:28,057 101010ms InfringementController OnException        - Error :E:\Personal\Arif\Source\Github\ParkingWebsite\Infringement-master\InfringementCustomerWeb\Views\Infringement\Search.cshtml(74): error CS1009: Unrecognized escape sequence
+INFO  2016-03-18 06:52:51,631 184584ms InfringementController Search             - Render page to search for infrngements
+WARN  2016-03-18 06:52:52,188 185141ms InfringementController OnException        - Error :E:\Personal\Arif\Source\Github\ParkingWebsite\Infringement-master\InfringementCustomerWeb\Views\Infringement\Search.cshtml(74): error CS1009: Unrecognized escape sequence
+INFO  2016-03-18 06:53:05,876 198828ms InfringementController Search             - Render page to search for infrngements
+WARN  2016-03-18 06:53:06,795 199748ms InfringementController OnException        - Error :E:\Personal\Arif\Source\Github\ParkingWebsite\Infringement-master\InfringementCustomerWeb\Views\Infringement\Search.cshtml(74): error CS1009: Unrecognized escape sequence
+INFO  2016-03-18 06:53:17,581 210534ms InfringementController Search             - Render page to search for infrngements
+WARN  2016-03-18 06:53:18,187 211140ms InfringementController OnException        - Error :E:\Personal\Arif\Source\Github\ParkingWebsite\Infringement-master\InfringementCustomerWeb\Views\Infringement\Search.cshtml(74): error CS1009: Unrecognized escape sequence
+INFO  2016-03-18 06:53:33,989 226942ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-18 06:53:57,466 250419ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-18 06:54:48,994 301947ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-18 07:01:16,842   584ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-18 07:02:32,173 75915ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-18 07:03:51,480 155222ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-18 07:03:51,917 155658ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-18 07:03:51,990 155732ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-18 07:03:52,047 155789ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-18 07:04:18,951   635ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-18 07:05:56,315   531ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-18 07:07:06,743   538ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-18 07:09:36,997 150792ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-18 07:09:37,404 151199ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-18 07:09:37,806 151601ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-18 07:09:57,658 171453ms InfringementController SearchList         - Search for infringement
+INFO  2016-03-18 11:35:34,357  4490ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 12:51:41,544   447ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 13:18:29,001   637ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 13:27:59,368 571004ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 13:43:05,387 12238ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 13:43:14,542 21393ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 13:50:40,804   414ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 13:52:01,261 80871ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 14:14:10,975  1917ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 14:23:07,941  2083ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 14:25:33,921 148063ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 14:26:41,358 215500ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 15:13:34,460 3028602ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 15:23:52,527  1857ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 15:24:16,366 25696ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 15:26:23,651 152982ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 15:32:08,401   524ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 15:59:40,627  1991ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 16:27:34,437   436ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 16:54:59,388  1290ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 17:36:09,935  1747ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 17:39:54,246 226057ms HomeController         SendMail           - BodyText : <p>Kind attention - Appeal Infringment Notice </p><p> anil has submitted following message on 19-03-2016 17:39</p><p> this is test mail from contact us </p><p>Thanks</p><p>Online Contact us web form -Customer Portal.</p>
+INFO  2016-03-19 17:39:54,894 226705ms HomeController         SendMail           - Mail Sent successfully from contact us!....anilkumarkaranam@gmail.com
+INFO  2016-03-19 21:23:31,533  3364ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 21:38:28,120 899952ms HomeController         ContactMail        - contact us : Abhinay ::  General Message ::  abhinay@a.com ::  This is Test mail from contact us for Abhi General message
+INFO  2016-03-19 21:39:17,236 949067ms HomeController         SendMail           - BodyText : <p>Kind attention - General Message </p><p> Abhinay has submitted following message on 19-03-2016 21:38</p><p> This is Test mail from contact us for Abhi General message </p><p>Thanks</p><p>Online Contact us web form -Customer Portal.</p>
+INFO  2016-03-19 21:39:17,237 949068ms HomeController         SendMail           - Mail Sent successfully from contact us!....anilkumarkaranam@gmail.com
+INFO  2016-03-19 21:44:25,978 1257810ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 21:44:35,542 1267373ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-19 22:14:20,319 10102ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-20 08:30:34,340  2258ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-20 08:40:04,121 572039ms HomeController         ContactMail        - contact us : karanam ::  Appeal Infringment Notice ::  anilkumar@a.com ::  test
+INFO  2016-03-20 08:40:18,823 586741ms HomeController         SendMail           - BodyText : <p>Kind attention - Appeal Infringment Notice </p><p> karanam has submitted following message on 20-03-2016 08:40</p><p> test </p><p>Thanks</p><p>Online Contact us web form -Customer Portal.</p>
+INFO  2016-03-20 08:40:18,824 586742ms HomeController         SendMail           - Mail Sent successfully from contact us!....anilkumarkaranam@gmail.com
+INFO  2016-03-20 08:40:25,357 593275ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-20 08:51:36,777  9514ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-20 17:57:28,042   580ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-20 18:41:15,039 2627576ms HomeController         ContactMail        - contact us : sdfs ::  General Message ::  sdf@a.com ::  sdfsdf
+INFO  2016-03-20 18:42:13,393  2012ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-20 18:43:41,278  1956ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-20 18:46:50,715  1912ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-20 18:48:53,792 124989ms HomeController         ContactMail        - contact us : asdf ::  General Message ::  asdf@a.com ::  abcd
+INFO  2016-03-20 18:49:06,487 137683ms HomeController         SendMail           - BodyText : <p>Kind attention - General Message </p><p> asdf has submitted following message on 20-03-2016 18:49</p><p> abcd </p><p>Thanks</p><p>Online Contact us web form -Customer Portal.</p>
+INFO  2016-03-20 18:49:06,487 137683ms HomeController         SendMail           - Mail Sent successfully from contact us!....anilkumarkaranam@gmail.com
+INFO  2016-03-20 18:49:53,425 184622ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-21 07:43:37,087   440ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-03-21 07:44:37,705 61058ms HomeController         ContactMail        - contact us : Anil Karanam ::  Appeal Infringment Notice ::  anilkumarkaranam@gmail.com ::  This is test message from Anil 
+INFO  2016-03-21 07:45:46,557 129910ms HomeController         SendMail           - BodyText : <p>The following has been sent from contact us page.</p><p>Submit Date & Time: 21-03-2016 07:44 </p><p>Name : Anil Karanam has submitted following message on 21-03-2016 07:44</p><p>Message : Type - Appeal Infringment Notice </p><p> Infringement Number :ABC0001 </p><p> Message :This is test message from Anil  </p>
+INFO  2016-03-21 07:45:46,573 129925ms HomeController         SendMail           - Mail Sent successfully from contact us!....anilkumarkaranam@gmail.com
+INFO  2016-04-05 12:17:17,151   354ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-04-05 13:45:36,502   907ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-04-05 13:46:09,486 33891ms InfringementController SearchList         - Search for infringement
+INFO  2016-04-05 13:46:10,335 34740ms InfringementController SearchList         - Search on infringement number
+INFO  2016-04-05 21:33:29,845   421ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-04-05 21:33:36,783  7359ms InfringementController SearchList         - Search for infringement
+INFO  2016-04-05 21:33:37,080  7656ms InfringementController SearchList         - Search on infringement number
+INFO  2016-04-05 21:34:00,487 31063ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-04-05 21:34:03,800 34376ms InfringementController SearchList         - Search for infringement
+INFO  2016-04-05 21:34:03,800 34376ms InfringementController SearchList         - Search on infringement number
+INFO  2016-04-07 23:41:43,008   372ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-04-12 23:35:04,542  5485ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-04-14 22:56:13,394  1116ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-04-14 23:29:05,919   430ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-04-14 23:31:15,312 129822ms HomeController         ContactMail        - contact us : abc ::  General Message ::  anilkumarkaranam@gmail.com ::  test
+INFO  2016-04-14 23:31:42,506 157017ms HomeController         SendMail           - BodyText : <p>The following has been sent from contact us page.</p><p>Submit Date & Time: 14-04-2016 23:31 </p><p>Name : abc <p>Email : anilkumarkaranam@gmail.com <p>Message Type : General Message </p><p> Infringement Number :22222 </p><p> Message :test </p>
+INFO  2016-04-14 23:31:42,506 157017ms HomeController         SendMail           - Mail Sent successfully from contact us!....vrajeshjayswal@gmail.com
+INFO  2016-04-29 22:00:20,912  1126ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-04-29 22:00:30,685 10899ms InfringementController SearchList         - Search for infringement
+INFO  2016-04-29 22:00:31,268 11482ms InfringementController SearchList         - Search on infringement number
+WARN  2016-04-29 22:00:59,259 39473ms InfringementController OnException        - Error :Input string was not in a correct format.
+WARN  2016-04-29 22:03:03,444 163658ms InfringementController OnException        - Error :Input string was not in a correct format.
+WARN  2016-04-29 22:03:15,666 175880ms InfringementController OnException        - Error :Input string was not in a correct format.
+WARN  2016-04-29 22:04:25,919 246133ms InfringementController OnException        - Error :Input string was not in a correct format.
+INFO  2016-04-29 22:07:31,101   341ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-04-29 22:07:40,327  9567ms InfringementController SearchList         - Search for infringement
+INFO  2016-04-29 22:07:40,772 10012ms InfringementController SearchList         - Search on infringement number
+WARN  2016-04-29 22:12:49,494 318734ms InfringementController OnException        - Error :Input string was not in a correct format.
+INFO  2016-04-29 22:12:57,991 327231ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-04-29 22:13:04,535 333775ms InfringementController SearchList         - Search for infringement
+INFO  2016-04-29 22:13:04,536 333776ms InfringementController SearchList         - Search on infringement number
+WARN  2016-04-29 22:14:00,887 390127ms InfringementController OnException        - Error :Input string was not in a correct format.
+INFO  2016-04-29 22:14:55,804   291ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-04-29 22:15:04,368  8855ms InfringementController SearchList         - Search for infringement
+INFO  2016-04-29 22:15:04,485  8972ms InfringementController SearchList         - Search on infringement number
+INFO  2016-04-29 22:17:25,031 149518ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-04-29 22:17:50,957 175444ms InfringementController SearchList         - Search for infringement
+INFO  2016-04-29 22:17:50,959 175446ms InfringementController SearchList         - Search on infringement number
+INFO  2016-05-18 14:29:54,379   483ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-18 14:30:19,526 25629ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-18 14:30:19,908 26011ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-19 12:15:48,788   837ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-19 12:33:00,567 1032615ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-19 12:33:00,877 1032925ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-19 12:47:15,548   605ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-19 12:54:43,705 448762ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-19 12:56:46,596 571653ms HomeController         ContactMail        - contact us : Ravi Shankar ::  General Message ::  ravishankar.chaturvedi@quagnitia.com ::  Hello There
+INFO  2016-05-19 13:02:45,040 930096ms HomeController         SendMail           - BodyText : <p>The following has been sent from contact us page.</p><p>Submit Date & Time: 19-05-2016 19:29 </p><p>Name : Ravi Shankar <p>Email : ravishankar.chaturvedi@quagnitia.com <p>Message Type : General Message </p><p> Infringement Number :YYY111 </p><p> Message :Hello There </p>
+INFO  2016-05-19 13:02:47,103 932159ms HomeController         SendMail           - Mail Sent successfully from contact us!....ravishankar.chaturvedi@quagnitia.com
+INFO  2016-05-19 13:03:30,632 975688ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-19 13:10:05,630 1370686ms HomeController         ContactMail        - contact us : Ravi Shankar ::  General Message ::  ravishankar.chaturvedi@quagnitia.com ::  This is Test Messages Form Ravi
+INFO  2016-05-19 13:10:13,463 1378519ms HomeController         SendMail           - BodyText : <p>The following has been sent from contact us page.</p><p>Submit Date & Time: 19-05-2016 19:40 </p><p>Name : Ravi Shankar <p>Email : ravishankar.chaturvedi@quagnitia.com <p>Message Type : General Message </p><p> Infringement Number :YYY111 </p><p> Message :This is Test Messages Form Ravi </p>
+INFO  2016-05-19 13:10:13,463 1378519ms HomeController         SendMail           - Mail Sent successfully from contact us!....vrajeshjayswal@gmail.com
+INFO  2016-05-19 13:29:52,419 2557475ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-19 13:30:05,210 2570267ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-19 13:30:05,220 2570277ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-19 14:25:37,436 5902492ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-19 14:25:43,952 5909008ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-19 14:25:43,953 5909009ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-19 15:34:39,006 10044063ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-19 15:34:59,072 10064128ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-19 15:34:59,074 10064130ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-19 23:24:08,819   457ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-19 23:25:14,512   374ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-19 23:26:31,962 77824ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-19 23:26:32,509 78371ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-19 23:37:14,384 720246ms InfringementController TransSuccess       - Acknowledgement of payment page
+INFO  2016-05-19 23:40:29,147 915009ms InfringementController CallSite.Target    - TransactionRefNo: 996426032361
+INFO  2016-05-19 23:40:31,372 917234ms InfringementController CallSite.Target    - TransactionStatusCode: Completed
+INFO  2016-05-19 23:40:36,992 922854ms InfringementController TransSuccess       - outputData: {"PayerAcctSuffix":"","PayerAcctNumber":"98742364","PayerAcctSortCode":"123456","MerchantAcctNumber":"1248877","MerchantAcctSuffix":"000","MerchantAcctSortCode":"012345","MerchantAcctName":"iBank NZ 01","MerchantReferenceData":null,"TransactionRefNo":"996426032361","CurrencyCode":"NZD","CountryCode":"NZL","PaymentAmount":88.00,"AmountPaid":88.00,"EstablishedDateTime":"2016-05-20T04:04:01.213","StartDateTime":"2016-05-20T04:04:01.213","EndDateTime":"2016-05-20T04:07:00.673","BankReceipt":"50722618-124750","BankReceiptDateTime":"20 May 2016 04:07:01","TransactionStatusCode":"Completed","ErrorCode":"","ErrorMessage":"","FinancialInstitutionCode":"iBankNZ01","FinancialInstitutionName":"iBank NZ 01","MerchantReference":"I5EE408","MerchantAccountSuffix":"000","MerchantAccountNumber":"1248877","PayerFirstName":"Mr","PayerFamilyName":"DemoShopper","PayerAccountSuffix":""}
+INFO  2016-05-19 23:40:38,800 924661ms InfringementController CallSite.Target    - latest: {
+  "PayerAcctSuffix": "",
+  "PayerAcctNumber": "98742364",
+  "PayerAcctSortCode": "123456",
+  "MerchantAcctNumber": "1248877",
+  "MerchantAcctSuffix": "000",
+  "MerchantAcctSortCode": "012345",
+  "MerchantAcctName": "iBank NZ 01",
+  "MerchantReferenceData": null,
+  "TransactionRefNo": "996426032361",
+  "CurrencyCode": "NZD",
+  "CountryCode": "NZL",
+  "PaymentAmount": 88.0,
+  "AmountPaid": 88.0,
+  "EstablishedDateTime": "2016-05-20T04:04:01.213",
+  "StartDateTime": "2016-05-20T04:04:01.213",
+  "EndDateTime": "2016-05-20T04:07:00.673",
+  "BankReceipt": "50722618-124750",
+  "BankReceiptDateTime": "20 May 2016 04:07:01",
+  "TransactionStatusCode": "Completed",
+  "ErrorCode": "",
+  "ErrorMessage": "",
+  "FinancialInstitutionCode": "iBankNZ01",
+  "FinancialInstitutionName": "iBank NZ 01",
+  "MerchantReference": "I5EE408",
+  "MerchantAccountSuffix": "000",
+  "MerchantAccountNumber": "1248877",
+  "PayerFirstName": "Mr",
+  "PayerFamilyName": "DemoShopper",
+  "PayerAccountSuffix": ""
+}
+INFO  2016-05-19 23:41:27,957 973819ms InfringementController TransSuccess       - InfringementIds: 415
+INFO  2016-05-19 23:42:21,968 1027830ms InfringementController TransSuccess       - Bank Payment successful, change infringement status
+INFO  2016-05-19 23:42:58,037 1063899ms InfringementController TransSuccess       - Bank Infringement payment record createdInfringementCustomerWeb.infringement_payment
+INFO  2016-05-19 23:43:23,322 1089184ms InfringementController TransSuccess       - Bank Infringement payment record saved
+INFO  2016-05-19 23:47:59,253 1365115ms InfringementController SendMail           - transactionNumber : 996426032361
+INFO  2016-05-19 23:48:00,825 1366687ms InfringementController SendMail           - Mail Sent successfully!....
+INFO  2016-05-20 00:18:51,077 3216938ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-20 00:18:59,526 3225388ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-20 00:18:59,529 3225391ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-23 13:09:25,613 160332ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 14:17:48,425 2555521ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 14:37:17,419 3724515ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 14:37:36,038 3743134ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 14:38:40,522 3807618ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 14:46:07,410 63812ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 14:46:20,305 76707ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 14:49:10,749   392ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 14:50:03,071 52714ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 14:52:50,253 219895ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 14:54:30,959 320602ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 15:00:08,683 658325ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 15:00:16,693 666336ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-23 15:00:17,285 666928ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-23 15:11:03,452 53334ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 15:11:29,117 78998ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 15:11:46,449 96330ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-23 15:11:46,890 96771ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-23 15:18:33,536 59653ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 15:22:55,132 321249ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 15:23:12,334 338451ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 15:28:52,759  2354ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 15:29:32,220 41815ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 15:29:47,500 57094ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 15:31:39,778 169373ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 15:31:51,116 180710ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 15:31:54,718 184312ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 15:32:00,179 189774ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-23 15:32:00,353 189948ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-23 15:33:03,267 252861ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-23 15:33:03,267 252861ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-23 15:33:17,331 266926ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 15:39:53,374 27691ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 15:44:21,400 295717ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 15:44:33,305 307623ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 15:53:01,171 815488ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 15:59:54,699 14558ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 16:00:37,481 57340ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 16:00:45,208 65067ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 16:01:27,596 107455ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 16:01:35,270 115129ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-23 16:01:35,380 115239ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-23 16:06:18,687 398546ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 16:06:31,350 411209ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-23 16:06:31,351 411210ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-23 16:06:48,790 428649ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 16:07:10,739 450598ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 16:07:14,806 454665ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-23 16:07:14,807 454666ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-23 16:07:21,054 460912ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 16:28:30,155 15281ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 16:31:28,705 193831ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 17:39:48,114 17878ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 17:40:01,244 31007ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-23 17:40:01,744 31507ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-23 17:40:16,879 46643ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-23 17:40:16,879 46643ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-23 17:45:23,756 353520ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-23 17:45:23,757 353521ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-23 17:49:32,788 602551ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-23 17:49:32,790 602553ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-23 17:49:46,734 616497ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-23 17:49:46,734 616497ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-23 17:50:22,948 652711ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-23 17:50:22,950 652713ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-23 17:56:22,721 1012484ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-23 17:56:22,723 1012486ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-23 17:59:47,307 1217070ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-23 17:59:47,308 1217071ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-23 18:01:43,096 1332859ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-23 18:01:43,097 1332860ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-23 18:04:10,891 1480654ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-23 18:04:10,901 1480664ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-23 18:07:29,725 1679489ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-23 18:07:29,727 1679491ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-23 18:07:56,847 1706610ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-23 18:09:42,012 1811776ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-24 10:14:38,948 617788ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-24 10:17:17,888 776727ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-25 15:50:23,225 320775ms HomeController         ContactMail        - contact us : RaviShankar ::  General Message ::  ravishankar.chaturvedi@quagnitia.com ::  Test masil
+INFO  2016-05-25 15:50:37,488 335037ms HomeController         SendMail           - BodyText : <p>The following has been sent from contact us page.</p><p>Submit Date & Time: 25-05-2016 22:20 </p><p>Name : RaviShankar <p>Email : ravishankar.chaturvedi@quagnitia.com <p>Message Type : General Message </p><p> Infringement Number :Yyy111 </p><p> Message :Test masil </p>
+INFO  2016-05-25 15:50:37,489 335038ms HomeController         SendMail           - Mail Sent successfully from contact us!....vrajeshjayswal@gmail.com
+INFO  2016-05-25 15:52:07,359 424909ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-25 15:52:17,310 434859ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-25 15:52:17,397 434946ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-25 17:47:07,621 7325170ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-25 17:47:11,621 7329170ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-25 17:47:11,622 7329171ms InfringementController SearchList         - Search on rego number
+INFO  2016-05-31 13:09:37,999  9337ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-31 13:13:25,992 10314ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-05-31 13:13:34,286 18608ms InfringementController SearchList         - Search for infringement
+INFO  2016-05-31 13:13:34,823 19145ms InfringementController SearchList         - Search on rego number
+INFO  2016-06-01 14:08:40,591 79406ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-06-01 14:08:52,435 91250ms InfringementController SearchList         - Search for infringement
+INFO  2016-06-01 14:08:52,739 91554ms InfringementController SearchList         - Search on rego number
+INFO  2016-06-03 17:42:36,186 22104664ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-06-03 17:44:01,153 22189631ms InfringementController SearchList         - Search for infringement
+INFO  2016-06-03 17:44:01,280 22189758ms InfringementController SearchList         - Search on rego number
+INFO  2016-06-03 17:47:27,163 22395641ms InfringementController SearchList         - Search for infringement
+INFO  2016-06-03 17:47:27,168 22395646ms InfringementController SearchList         - Search on rego number
+INFO  2016-06-03 17:47:36,604 22405083ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-06-03 17:52:47,792 22716270ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-06-07 10:13:29,620 94704ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-06-07 10:15:32,466 217550ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-06-07 10:15:46,085 231169ms InfringementController SearchList         - Search for infringement
+INFO  2016-06-07 10:15:46,685 231769ms InfringementController SearchList         - Search on rego number
+INFO  2016-06-07 10:19:26,599 451683ms InfringementController SearchList         - Search for infringement
+INFO  2016-06-07 10:19:26,599 451683ms InfringementController SearchList         - Search on rego number
+INFO  2016-06-10 12:18:53,064  9475ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-06-10 12:20:09,016 85426ms InfringementController SearchList         - Search for infringement
+INFO  2016-06-10 12:20:09,323 85733ms InfringementController SearchList         - Search on rego number
+INFO  2016-06-10 14:54:50,727 429072ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-06-10 14:55:07,845 446190ms InfringementController SearchList         - Search for infringement
+INFO  2016-06-10 14:55:08,361 446706ms InfringementController SearchList         - Search on rego number
+INFO  2016-06-10 17:22:59,494 174376ms InfringementController Search             - Render page to search for infrngements
+INFO  2016-06-10 17:23:17,876 192759ms InfringementController SearchList         - Search for infringement
+INFO  2016-06-10 17:23:17,995 192878ms InfringementController SearchList         - Search on rego number
+INFO  2016-06-10 17:30:02,236 597119ms InfringementController TransCancelled     - Acknowledgement of payment page for POLI Cancelled
+INFO  2016-06-10 17:30:25,030 619912ms InfringementController TransCancelled     - POLI Payment Cancelled.
+INFO  2016-06-10 17:35:20,106 914988ms InfringementController TransSuccess       - Acknowledgement of payment page
+INFO  2016-06-10 17:49:20,012 1754894ms InfringementController CallSite.Target    - TransactionRefNo: 996426540982
+INFO  2016-06-10 17:49:20,920 1755802ms InfringementController CallSite.Target    - TransactionStatusCode: Completed
+INFO  2016-06-10 17:49:21,154 1756036ms InfringementController TransSuccess       - outputData: {"PayerAcctSuffix":"","PayerAcctNumber":"98742364","PayerAcctSortCode":"123456","MerchantAcctNumber":"0780495","MerchantAcctSuffix":"000","MerchantAcctSortCode":"010505","MerchantAcctName":"MunicipalEnforce","MerchantReferenceData":null,"TransactionRefNo":"996426540982","CurrencyCode":"NZD","CountryCode":"NZL","PaymentAmount":1.00,"AmountPaid":1.00,"EstablishedDateTime":"2016-06-10T22:02:12.08","StartDateTime":"2016-06-10T22:02:12.08","EndDateTime":"2016-06-10T22:04:35.8","BankReceipt":"71342533-127019","BankReceiptDateTime":"10 June 2016 22:04:35","TransactionStatusCode":"Completed","ErrorCode":"","ErrorMessage":"","FinancialInstitutionCode":"iBankNZ01","FinancialInstitutionName":"iBank NZ 01","MerchantReference":"I6CJN1","MerchantAccountSuffix":"000","MerchantAccountNumber":"0780495","PayerFirstName":"","PayerFamilyName":"","PayerAccountSuffix":""}
+INFO  2016-06-10 17:49:21,566 1756448ms InfringementController CallSite.Target    - latest: {
+  "PayerAcctSuffix": "",
+  "PayerAcctNumber": "98742364",
+  "PayerAcctSortCode": "123456",
+  "MerchantAcctNumber": "0780495",
+  "MerchantAcctSuffix": "000",
+  "MerchantAcctSortCode": "010505",
+  "MerchantAcctName": "MunicipalEnforce",
+  "MerchantReferenceData": null,
+  "TransactionRefNo": "996426540982",
+  "CurrencyCode": "NZD",
+  "CountryCode": "NZL",
+  "PaymentAmount": 1.0,
+  "AmountPaid": 1.0,
+  "EstablishedDateTime": "2016-06-10T22:02:12.08",
+  "StartDateTime": "2016-06-10T22:02:12.08",
+  "EndDateTime": "2016-06-10T22:04:35.8",
+  "BankReceipt": "71342533-127019",
+  "BankReceiptDateTime": "10 June 2016 22:04:35",
+  "TransactionStatusCode": "Completed",
+  "ErrorCode": "",
+  "ErrorMessage": "",
+  "FinancialInstitutionCode": "iBankNZ01",
+  "FinancialInstitutionName": "iBank NZ 01",
+  "MerchantReference": "I6CJN1",
+  "MerchantAccountSuffix": "000",
+  "MerchantAccountNumber": "0780495",
+  "PayerFirstName": "",
+  "PayerFamilyName": "",
+  "PayerAccountSuffix": ""
+}
+INFO  2016-06-10 17:49:26,914 1761796ms InfringementController TransSuccess       - InfringementIds: 487
+INFO  2016-06-10 17:49:37,447 1772329ms InfringementController TransSuccess       - Bank Payment successful, change infringement status
+INFO  2016-06-10 17:49:37,449 1772331ms InfringementController TransSuccess       - Bank Infringement payment record createdInfringementCustomerWeb.infringement_payment
+INFO  2016-06-10 17:49:40,886 1775768ms InfringementController TransSuccess       - Bank Infringement payment record saved
+INFO  2016-06-10 17:49:45,243 1780125ms InfringementController SendMail           - transactionNumber : 996426540982
+INFO  2016-06-10 17:49:45,244 1780126ms InfringementController SendMail           - Mail Sent successfully!....

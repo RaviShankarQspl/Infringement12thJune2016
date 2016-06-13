@@ -1,0 +1,251 @@
+﻿@model IList<InfringementWeb.infringement>
+
+@{
+    ViewBag.Title = "Search List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@*<p>
+        @Html.ActionLink("Create New", "Create")
+    </p>*@
+
+@using (Html.BeginForm("PayNow", "Infringements", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })<br />
+    <table class="table">
+        <tr>
+            <th>
+                @Html.Label("Reg #")
+            </th>
+            <th>
+                @Html.Label("Inf #")
+            </th>
+            <th>
+                @Html.Label("Date")
+            </th>
+            <th>
+                @Html.Label("Infringement")
+            </th>
+            <th class="hidden-xs">
+                @Html.Label("Type")
+            </th>
+            <th>
+                @Html.Label("Comment")
+            </th>
+
+            <th>
+                @Html.Label("Amount")
+            </th>
+            <th>
+                @Html.Label("Due Date")
+            </th>
+            <th>
+                @Html.Label("Amount After Due")
+            </th>
+            <th style="min-width:70px;">
+                @Html.Label("Pay")
+            </th>
+        </tr>
+
+        @for (var i = 0; i < Model.Count; i++)
+        {
+            <tr>
+                <td>
+                    @Html.HiddenFor(x => x[i].Id, new { id = "Infringement" + i })
+                    @Html.HiddenFor(x => x[i].ActualAmountToPay, new { id = "ActualAmountToPay" + i })
+                    @Html.HiddenFor(x => x[i].StatusId)
+                    @Html.DisplayFor(x => x[i].Rego)
+                </td>
+                <td>
+                    @Html.DisplayFor(x => x[i].Number)
+                </td>
+                <td>
+                    @Html.ValueFor(x => x[i].IncidentTime, "{0:dd/MM/yyyy hh:mm}")
+                    @*@Html.DisplayFor(x => x[i].IncidentTime)*@
+                </td>
+                <td>
+                    @Html.DisplayFor(x => x[i].parking_location.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(x => x[i].infringementtype.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(x => x[i].Comment)
+                </td>
+                <td>
+                    @Html.DisplayFor(x => x[i].DisplayAmount)
+                </td>
+                <td>
+                    @Html.ValueFor(x => x[i].DueDate, "{0:dd/MM/yyyy}")
+
+                </td>
+                <td>
+                    $@Html.DisplayFor(x => x[i].DisplayDueAmount)
+                </td>
+                <td>
+                    <div class="checkbox">
+                        @*@Html.EditorFor(x => x[i].Pay)*@
+                        @Html.CheckBoxFor(x => x[i].Pay.Value, new
+                   {
+                       id = "chkInfringement" + i,
+                       onclick = "GetCheckBoxValue('" + i + "');"
+                   })
+                    </div>
+
+                </td>
+            </tr>
+        }
+
+    </table>
+
+
+    <div class="row">
+        <div class="form-group">
+            <div class="col-md-8">
+                <table>
+                    <tr>
+                        <td>Total Payment Amount : $</td>
+                        <td><input type="text" id="txtTotalAmount" name="txtTotalAmount" width="20px" readonly class="form-control" value="@ViewBag.TotalAmount" /></td>
+                    </tr>
+                    <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+                </table>
+
+            </div>
+            <div class="col-md-4">
+                @*<input type="submit" id="PayNow" value="Pay via Credit Card" class="btn btn-default " />*@
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <div class="col-md-6">
+                @*@Html.TextBox("Email", "", new { @class = "control-label col-md-8 form-control", @placeholder = "Enter email address for receipt", @value = "@ViewBag.Email" })*@
+                <input name="Email" class="control-label col-md-8 form-control" id="Email" type="text" placeholder="Enter email address for receipt" value="@ViewBag.Email"><Br /><Br /><span style="float:left">(Multiple Email Ids Ex: abc.a.com, xyz@a.com)</span>
+                @Html.TextBox("InfringementIds", "", new { @class = "control-label col-md-8 form-control textboxstyle", @placeholder = "Enter email address for receipt" })
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <div class="col-md-12">
+                @*<input type="submit" id="Submit" name="Submit" value="Pay via Bank" class="btn btn-default" style="background-image: url('../../Content/images/POLi_logo1.PNG'); background-repeat: no-repeat; text-indent: -9999px; height: 72px; width: 150px;" />
+                <input type="submit" id="Submit" name="Submit" value="Pay via Credit Card" class="btn btn-default" style="background-image: url('../../Content/images/ViasMC_logo1.PNG'); background-repeat: no-repeat; text-indent: -9999px; height: 70px; width: 150px;" />
+                <input type="button" id="SearchAgain" value="Cancel - Search Again" class="btn btn-default" onClick="GotoHome()" style="background-image: url('../../Content/images/Cancel_SearchAgain1.PNG'); background-repeat: no-repeat; text-indent: -9999px; height: 70px; width: 150px;" />*@
+
+                <input type="submit" id="Submit" name="Submit" value="Pay via Bank" class="btn btn-default btn_submit" style="background-image: url('../../Content/images/pay_with_poli_btn.png'); background-repeat: no-repeat; text-indent: -9999px; width: 100%;max-width:305px;border-color:transparent transparent transparent transparent;padding: 15px 9px;" />
+                <input type="submit" id="Submit" name="Submit" value="Pay via Credit Card" class="btn btn-default btn_submit" style="background-image: url('../../Content/images/pay_with_credit_btn.png'); background-repeat: no-repeat; text-indent: -9999px; width: 100%;max-width:305px;border-color:transparent transparent transparent transparent;padding: 15px 9px;" />
+                <input type="button" id="SearchAgain" value="Cancel - Search Again" class="btn btn-default btn_submit" onClick="GotoHome()" style="background-image: url('../../Content/images/cancel_search_btn.png'); background-repeat: no-repeat; text-indent: -9999px; width: 100%;max-width:305px;border-color:transparent transparent transparent transparent;padding: 15px 9px;" />
+            </div>
+        </div>
+    </div>
+
+}
+
+<br /><br /><br /><br />
+<div>
+    @*@Html.ActionLink("Back to List", "Search")*@
+</div>
+@Html.Hidden("hdnNoOfRecords", @ViewData["NoOfRecords"])
+
+@Html.Hidden("hdnInfringementIds", "0")
+
+<script type="text/javascript">
+
+    function EmailClickFunc(id) { alert(id); }
+
+</script>
+<style>
+    .textboxstyle {
+        opacity: 0;
+    }
+
+    .btn_submit:hover {
+    background-color: transparent;
+}
+</style>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/dateTimePicker")
+    @Scripts.Render("~/bundles/jqueryui")
+
+    <script type="text/javascript">
+
+        function GotoHome() {
+            //debugger;
+            window.location = "/Infringements/Search";
+        }
+
+        function GetCheckBoxValue(id) {
+
+            var iRecCount = $("#hdnNoOfRecords").val();
+            var totalamount = 0;
+            var selectedids = "";
+            selectedids = "";
+            // traverse the inpfields elements, and adds the value of selected (checked) checkbox in selchbox
+            for (var i = 0; i < iRecCount; i++) {
+                if (document.getElementById('chkInfringement' + i).checked) {
+                    totalamount = totalamount + parseFloat(document.getElementById('ActualAmountToPay' + i).value);
+                    selectedids = selectedids + document.getElementById('Infringement' + i).value + ",";
+                }
+            }
+            totalamount = totalamount.toFixed(2);
+
+            $("#txtTotalAmount").val(totalamount);
+            $("#hdnInfringementIds").val(selectedids);
+            $("#InfringementIds").val(selectedids);
+
+            //alert("anil  " + totalamount);
+            return false;
+        }
+
+        $(document).ready(function () {
+            ShowUserSelection();
+        });
+
+
+        function ShowUserSelection() {
+            //debugger;
+            var iRecCount = $("#hdnNoOfRecords").val();
+            var inflist = $("#InfringementIds").val();
+            var totalamount = 0;
+            var selectedids = "";
+            selectedids = "";
+
+            if (inflist != null && inflist != "") {
+                var inflistarray = inflist.split(",");
+                if (inflistarray != null) {
+
+                    for (var i = 0; i < iRecCount; i++) {
+                        //if (document.getElementById('chkInfringement' + i).checked) {
+                        if (document.getElementById('Infringement' + i).value) {
+                            for (var x = 0; x < inflistarray.length ; x++) {
+                                if (inflistarray[x] == document.getElementById('Infringement' + i).value) {
+                                    document.getElementById('chkInfringement' + i).checked = true;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //totalamount = totalamount.toFixed(2);
+
+            //$("#txtTotalAmount").val(totalamount);
+            //$("#hdnInfringementIds").val(selectedids);
+            //$("#InfringementIds").val(selectedids);
+        }
+        function SubmitforPayment() {
+
+            if (parseInt($("#txtTotalAmount").val()) > 0)
+                return true
+            else
+                return false;
+        }
+
+
+    </script>
+}

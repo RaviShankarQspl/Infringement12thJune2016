@@ -1,0 +1,71 @@
+body{margin:0px;padding:0px;line-height:22px;}
+html,body.myside {overflow-x:hidden;outline: none;font-family: 'Droid Sans', sans-serif;font-size:14px;color:#606060; background:#fff;}
+img {max-width:100%; border:none; height:auto;}
+a {text-decoration:none; outline:none;-o-transition:all 0.3s ease 0s;-ms-transition:all 0.3s ease 0s;-moz-transition:all 0.3s ease 0s;-webkit-transition:all 0.3s ease 0s;
+transition:all 0.3s ease 0s;}
+.myside a:hover {text-decoration:none;transition: all 0.5s ease 0s;}
+.myside a:focus{outline:none;}
+.clear {clear:both;}
+.top_banner { display: inline-block; position: relative; }
+.top_banner img { display: block; max-width:100%;}
+.top_banner .logo_overlay {position: absolute; top:50px;left:0;width:100%;text-align:center; }
+.top_banner .logo_overlay .logo_img { margin:0 0 0 30px;  width:100% ;text-align:center;}
+.top_banner .logo_overlay .logo_img  img{display : block; margin: auto; }
+.top_banner .overlay {position: absolute; top:100px;left:0;width:100%;}
+.black_strip{color:#fff; font-size:27px; padding:15px 80px 15px 40px; background:#252525; float:left; border-radius:35px; margin: 7% 0 0 41%; 
+background:#252525 url(../Content/images/blue_arrow.png) no-repeat top right; font-weight:700; height:70px }
+.blue_strip{color:#fff; font-size:25px;padding:15px 80px 15px 40px; background:#252525; float:left; border-radius:35px; margin: 3% 0 0 40%; 
+background:#4bc0dd url(../Content/images/black_arrow.png) no-repeat top right; font-weight:700;height:70px }
+.welcome_txt{ color:#474747; font-size:56px; font-weight:700; display:block; text-align:center; margin:25px 0 15px 0; line-height:60px  }
+.blue_txt{ color:#25a8e1;font-size:36px; display:block; text-align:center; line-height:30px}
+.details_p { color:#555555; font-size:15px; display:block; text-align:center; line-height:30px; margin-top:35px;}
+.details_p a{ color:#25a8e1; text-decoration:underline}
+.popup{ color:#25a8e1; text-decoration:underline; cursor:pointer}
+.footer_bg{ background:#212121;color:#4e4e4e; font-size:14px; text-align:center; padding:25px 0; margin-top:40px; }
+.modal-content h3{color:#474747;text-align:center;width:100%;}
+.modal-content h5{color:#25a8e1;font-size:15px;text-align:center;width:100%;}
+.modal-content h6{color:#555555;font-size:15px;line-height:25px;font-weight:bold;}
+.modal-content p{color:#555555;line-height:22px;}
+.modal-body {padding:30px!important;}
+.modal-content ul li{line-height:26px;}
+.model_height{height:300px;overflow-y:scroll;}
+.pop_table tr td{padding:10px;}
+.img_width{width:100%;}
+
+@media only screen  and (min-width:1280px) and (max-width: 1280px){
+.black_strip{ font-size:25px}
+.blue_strip{ font-size:23px; }
+	}
+@media only screen  and (min-width:1024px) and (max-width: 1024px){
+.top_banner .logo_overlay{ top:30px}
+.top_banner .overlay {top:65px;}
+.black_strip{ margin-top:7%; font-size:18px;padding-top:20px;}
+.blue_strip{ margin-top:2%;font-size:18px; padding-top:20px;}
+}
+@media only screen and (min-width: 768px) and (max-width: 960px){
+.top_banner .logo_overlay{ top:30px}
+.top_banner .logo_overlay .logo_img { margin: 0 0 0 100px;text-align: center;width:100%;}
+.top_banner .overlay {position: relative;top:5px;}
+.black_strip {float: none;font-size:20px;margin: 10px  auto 0  auto; width: 90%; }
+.blue_strip {float: none;font-size:20px;margin: 15px  auto 10px  auto; width: 90%; }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+.top_banner .logo_overlay{ top:15px}
+.top_banner .logo_overlay .logo_img { margin: 0 0 0 70px;text-align: center;width:100%;}
+.top_banner .overlay {position: relative;top:5px;}
+.black_strip {float: none;font-size:20px;margin: 10px  auto 0  auto; width: 88%; }
+.blue_strip {float: none;font-size:20px;margin: 15px  auto 10px  auto; width: 88%; padding-top:9px}
+
+}
+@media only screen and (min-width: 320px) and (max-width: 479px){
+.top_banner .logo_overlay{ top:8px}
+.top_banner .logo_overlay .logo_img { margin: 20px 0 0 120px;text-align: center;width:55%;}
+.top_banner .overlay {position: relative;top:5px;}
+.black_strip {float: none;font-size: 14px;margin: 10px  auto 0  auto; width: 86%; }
+.blue_strip {float: none;font-size: 14px;margin: 10px  auto 0  auto; width: 86%;padding:15px 80px 15px 40px;}
+.welcome_txt{font-size:50px;}
+.details_p {font-size:14px;}
+.modal-body {padding:15px !important;}
+}

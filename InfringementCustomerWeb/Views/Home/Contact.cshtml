@@ -1,0 +1,205 @@
+﻿@model InfringementCustomerWeb.Models.ContactUsModel
+@{
+    ViewBag.Title = "Contact Us";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/commonfunctions.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+@using (Html.BeginForm("ContactMail", "Home", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <a href="~/Home/Index">
+                <img src="~/Content/images/me_logo_grey_L.jpg" width="350" /><br /><hr style="margin-top: 20px; margin-bottom: 20px; border: 0;   border-top: 3px solid #000000;" />
+            </a>
+        </div>
+    </div>
+    <div class="form-horizontal">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <h4>Contact Us</h4>
+                <hr />
+            </div>
+        </div>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="col-md-3">
+                @Html.LabelFor(model => model.CustomerName, htmlAttributes: new { @class = "control-label col-md-12" })
+            </div>
+
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.CustomerName, new { htmlAttributes = new { @class = "form-control" } })
+                @*@Html.ValidationMessageFor(model => model.CustomerName, "", new { @class = "text-danger" })*@
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-3">
+                @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-12" })
+            </div>
+
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @*@Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })*@
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-3">
+                @Html.LabelFor(model => model.Subject, htmlAttributes: new { @class = "control-label col-md-12" })
+            </div>
+
+            <div class="col-md-4">
+                <select id="Subject" name="Subject" class="form-control">
+                    <option value="">Select Subject</option>
+                    <option value="Appeal Infringement Notice" @(ViewBag.Subject == "Appeal Infringement Notice" ? " selected" : "")>Appeal Infringement Notice</option>
+                    <option value="General Message" @(ViewBag.Subject == "General Message" ? " selected" : "")>General Message</option>
+                </select>
+                @*@Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })*@
+            </div>
+
+        </div>
+        <div class="form-group">
+            <div class="col-md-3">
+                @Html.LabelFor(model => model.InfringementNumber, htmlAttributes: new { @class = "control-label col-md-12" })
+            </div>
+
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.InfringementNumber, new { htmlAttributes = new { @class = "form-control" } })
+                @*@Html.ValidationMessageFor(model => model.InfringementNumber, "", new { @class = "text-danger" })*@
+            </div>
+
+        </div>
+        <div class="form-group">
+            <div class="col-md-3">
+                @Html.LabelFor(model => model.Message, htmlAttributes: new { @class = "control-label col-md-12" })
+            </div>
+
+            <div class="col-md-4">
+                <textarea id="Message" name="Message" rows="4" cols="200" class="form-control">@ViewBag.Message</textarea>
+            </div>
+            <div class="col-md-2">
+
+            </div>
+        </div>
+        @*<div class="form-group">
+                <div class="col-md-3">
+
+                </div>
+
+                <div class="col-md-4">
+                    <input name="RandomNumber" id="RandomNumber" class="form-control" readonly="readonly"   value="@ViewBag.RandomString" />
+                </div>
+                <div class="col-md-2">
+
+                </div>
+            </div>*@
+        <div class="form-group">
+            <div class="col-md-3">
+                @*<label class="control-label col-md-12" for="CustomerName">Enter the Above Random Number</label>*@
+
+            </div>
+
+            <div class="col-md-4">
+                @*<input name="txtRandomNumber" id="txtRandomNumber" class="form-control"  /><br />*@
+                <div class="g-recaptcha" data-sitekey="@ViewBag.reCAPTCHAClient"></div>
+            </div>
+            <div class="col-md-2">
+
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-3">
+
+            </div>
+
+            <div class="col-md-4">
+                <input id="Submit" name="Submit" type="submit" value="Send" class="btn btn-default" onclick="return validate();" />
+                &nbsp;&nbsp;&nbsp;&nbsp; <input type="button" id="SearchAgain" value="Go to Home" class="btn btn-default" onClick="GotoHome()" />
+            </div>
+            <div class="col-md-2">
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <div class="form-horizontal">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <hr /><br />
+                <!--Our contact Phone number : xx xxx xxxx<br />-->
+                Our Address:<br />
+                Level 6, Customs House,<br />
+                17-21 Whitmore Street, Wellington.<br />
+
+            </div>
+        </div>
+    </div>
+}
+
+
+
+@section Scripts {
+    <script>
+
+        function GotoHome() {
+            //debugger;
+            //window.location = "/Infringement/Search";
+            window.location = "/Home/Index";
+        }
+        function validate() {
+
+            var result = true;
+            //debugger;
+            if ($("#CustomerName").val().trim() == "") {
+                alert("Please enter Your Name.");
+                $("#CustomerName").focus();
+                result = false;
+            }
+            else if ($("#Email").val().trim() == "") {
+                alert("Please enter Your Email.");
+                $("#Email").focus();
+                result = false;
+            }
+            else if (!validateEmail($("#Email").val())) {
+                alert("Please enter Valid Email.");
+                $("#Email").focus();
+                result = false;
+            }
+            else if ($("#Subject").val().trim() == "") {
+                alert("Please select Subject.");
+                $("#Subject").focus();
+                result = false;
+            }
+            else if ($("#Subject").val().trim() == "Appeal Infringment Notice" && $("#InfringementNumber").val().trim() == "") {
+                alert("Please enter Infringement Number.");
+                $("#InfringementNumber").focus();
+                result = false;
+            }
+            else if ($("#Message").val().trim() == "") {
+                alert("Please enter Message.");
+                $("#Message").focus();
+                result = false;
+            }
+            //else if ($("#RandomNumber").val().trim() != $("#txtRandomNumber").val().trim()) {
+            //    alert("Please enter the above string currectly.");
+            //    $("#txtRandomNumber").focus();
+            //    result = false;
+            //}
+
+            return result;
+        }
+
+
+
+    </script>
+}
+

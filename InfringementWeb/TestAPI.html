@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+
+     <script src="Scripts/jquery-1.10.2.js"></script>
+  <script type="text/javascript">
+  function abc()
+  {
+	alert("a");
+  }
+    
+
+    function AddInfringement() {
+		debugger;
+        jQuery.support.cors = true;
+        var infringement = {
+                InfringementTime: "2015-01-01 07:12:10",
+				InfringementNumber: "XYZ005",
+				Rego: "XYZ005",
+				BuildingId: 6,
+				CarMake: 8,
+				CarModel: "Pulsar",
+				InfringementType: 1,
+				Amount: 12.21,
+				Comment: "This is a comment3",
+				UserName: "Pranil",
+				Latitude: "31",
+				Longitude: "32",
+				LoginId:"mukesh@infringement.com",
+				Password: "mukesh1@3",
+
+				Name: "anil",
+				Street1: "Shivas Residency",
+				Street2: "Secretory Colony",
+				Suburb: "RNagar",
+				PostCode: "500089",
+				CountryId: 1,
+				CityName: "Hyderabad"
+        };       
+        
+        $.ajax({
+            url: 'http://localhost:50247/api/infringement/create',
+            type: 'POST',
+            data: JSON.stringify(infringement),
+            contentType: "application/json;charset=utf-8",
+            success: function (data) {
+				debugger;
+                //WriteResponse(data);
+            },
+            error: function (x, y, z) {
+				debugger;
+                alert(x + '\n' + y + '\n' + z);
+            }
+        });
+    }
+
+    
+</script>
+ </head>
+ <body>
+  <input type="button" name="b1" id="b1" value="Add" onClick="AddInfringement()"  />
+ </body>
+</html>

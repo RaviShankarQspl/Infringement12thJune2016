@@ -1,0 +1,720 @@
+INFO  2016-04-08 10:46:52,381 30529ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-04-08 22:55:12,027 318151ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-04-08 22:55:12,147 318271ms nfringementsController Edit               - infringement found assigned to viewbag, setting up viewbag and returning view
+INFO  2016-04-08 22:56:56,559 26385ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-04-08 22:57:18,642 48468ms nfringementsController Edit               - infringement found got imageslist, setting up viewbag and returning view
+INFO  2016-04-08 22:57:18,647 48473ms nfringementsController Edit               - infringement found assigned to viewbag, setting up viewbag and returning view
+INFO  2016-04-09 07:01:40,446 538024ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-04-10 14:42:01,703 44899ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-04-10 14:42:02,407 45602ms nfringementsController Edit               - infringement images count: 3
+INFO  2016-04-10 14:42:04,765 47961ms nfringementsController Edit               - returning model 
+INFO  2016-04-10 14:44:12,151 175347ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-04-10 14:44:12,885 176081ms nfringementsController Edit               - infringement images count: 3
+INFO  2016-04-10 14:44:16,450 179645ms nfringementsController Edit               - returning model 
+INFO  2016-04-10 14:45:46,265 21779ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-04-10 14:45:47,015 22529ms nfringementsController Edit               - infringement images count: 3
+INFO  2016-04-10 14:45:48,394 23908ms nfringementsController Edit               - returning model 
+INFO  2016-04-10 14:52:19,864 137836ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-04-10 14:52:20,632 138604ms nfringementsController Edit               - infringement images count: 3
+INFO  2016-04-10 14:52:24,150 142122ms nfringementsController Edit               - returning model 
+INFO  2016-04-11 07:15:37,734 81027ms nfringementsController Create             - model is valid, mapping to entityInfringementWeb.Models.InfringementModel
+INFO  2016-04-11 07:15:46,666 89959ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-04-11 07:15:46,682 89975ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-04-11 07:15:48,726 92019ms nfringementsController Edit               - returning model 
+INFO  2016-04-11 07:15:58,888 102180ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI4D7H1
+INFO  2016-04-11 07:15:58,888 102180ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-04-11 07:15:58,888 102180ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-04-11 22:46:10,830 333146ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-04-11 22:46:10,878 333194ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-04-11 22:46:12,751 335067ms nfringementsController Edit               - returning model 
+INFO  2016-04-11 22:50:44,612 606928ms nfringementsController Details            - Infringement found
+INFO  2016-04-11 22:51:11,570 633886ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-04-11 22:51:11,570 633886ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-04-11 22:51:13,349 635665ms nfringementsController Edit               - returning model 
+INFO  2016-04-11 22:52:34,084 716400ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-04-11 22:52:34,084 716400ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-04-11 22:52:35,585 717902ms nfringementsController Edit               - returning model 
+INFO  2016-04-11 22:52:49,540 731856ms nfringementsController Details            - Infringement found
+INFO  2016-04-11 23:11:22,314 1844631ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-04-11 23:11:40,755 1863071ms nfringementsController SearchList         - Search for infringement
+INFO  2016-04-11 23:11:40,755 1863071ms nfringementsController SearchList         - Search on infringement number
+INFO  2016-04-11 23:11:43,898 1866214ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-04-11 23:11:46,852 1869168ms nfringementsController SearchList         - Search for infringement
+INFO  2016-04-11 23:11:46,852 1869168ms nfringementsController SearchList         - Search on infringement number
+INFO  2016-04-11 23:11:52,024 1874341ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-04-11 23:11:57,000 1879316ms nfringementsController SearchList         - Search for infringement
+INFO  2016-04-11 23:11:57,000 1879316ms nfringementsController SearchList         - Search on infringement number
+INFO  2016-04-11 23:14:39,002 2041318ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-04-11 23:14:52,613 2054929ms nfringementsController SearchList         - Search for infringement
+INFO  2016-04-11 23:14:52,613 2054929ms nfringementsController SearchList         - Search on infringement number
+INFO  2016-04-11 23:16:30,259 2152575ms nfringementsController SearchList         - Search for infringement
+INFO  2016-04-11 23:16:30,259 2152575ms nfringementsController SearchList         - Search on infringement number
+INFO  2016-04-11 23:16:58,204 2180520ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-04-11 23:17:09,408 2191724ms nfringementsController SearchList         - Search for infringement
+INFO  2016-04-11 23:17:09,408 2191724ms nfringementsController SearchList         - Search on infringement number
+INFO  2016-04-11 23:17:30,786 2213102ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-04-11 23:17:41,245 2223562ms nfringementsController SearchList         - Search for infringement
+INFO  2016-04-11 23:17:41,245 2223562ms nfringementsController SearchList         - Search on infringement number
+INFO  2016-04-11 23:17:52,137 2234454ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-04-11 23:17:57,189 2239505ms nfringementsController SearchList         - Search for infringement
+INFO  2016-04-11 23:17:57,189 2239505ms nfringementsController SearchList         - Search on infringement number
+INFO  2016-04-11 23:18:12,923 2255239ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-04-11 23:18:21,243 2263560ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-04-11 23:18:25,329 2267645ms nfringementsController SearchList         - Search for infringement
+INFO  2016-04-11 23:18:25,329 2267645ms nfringementsController SearchList         - Search on infringement number
+INFO  2016-04-11 23:18:29,097 2271413ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-04-11 23:18:32,484 2274801ms nfringementsController SearchList         - Search for infringement
+INFO  2016-04-11 23:18:32,484 2274801ms nfringementsController SearchList         - Search on infringement number
+INFO  2016-04-11 23:18:37,407 2279723ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-04-11 23:18:43,422 2285738ms nfringementsController SearchList         - Search for infringement
+INFO  2016-04-11 23:18:43,422 2285738ms nfringementsController SearchList         - Search on infringement number
+INFO  2016-04-12 22:41:02,331 63166ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-04-12 22:41:12,530 73365ms nfringementsController SearchList         - Search for infringement
+INFO  2016-04-12 22:41:12,530 73365ms nfringementsController SearchList         - Search on infringement number
+INFO  2016-04-12 22:42:16,517 137352ms nfringementsController nesAcknowledgement - Acknowledgement of payment page
+INFO  2016-04-12 22:42:16,568 137403ms nfringementsController nesAcknowledgement - Response From Payment Gateway : txn_id=P1604W0005107266&receipt_no=25128729&txn_status=2&account_id=621393&reference=Parking+Infringement&particular=I2BE3212%2c&card_type=5&amount=35.00&response_code=0&response_text=Transaction+Successful&response_message=&customer_email=&authorisation_code=382861&error_message=&error_code=&custom_data=341%24anilkumarkaranam%40gmail.com&card_token=&date=13%2f04%2f2016+5%3a12%3a38+a.m.&checkout_id=&session_id=&blocked_reason=&
+INFO  2016-04-12 22:43:22,344 203179ms nfringementsController ResendMail         - Resend mail
+INFO  2016-04-12 22:45:14,972 315807ms nfringementsController SendMail           - transactionNumber : P1604W0005107266
+INFO  2016-04-12 22:45:16,644 317479ms nfringementsController SendMail           - Mail Sent successfully!.anilkumarkaranam@gmail.com
+INFO  2016-04-12 22:51:16,574 677409ms nfringementsController ResendMail         - Resend mail
+INFO  2016-04-12 22:53:17,434 798268ms nfringementsController SendMail           - transactionNumber : P1604W0005107266
+INFO  2016-04-12 22:53:17,438 798272ms nfringementsController SendMail           - Mail Sent successfully!.anilkumarkaranam@gmail.com
+INFO  2016-04-12 22:58:36,247 154766ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-04-12 22:58:46,636 165155ms nfringementsController SearchList         - Search for infringement
+INFO  2016-04-12 22:58:46,636 165155ms nfringementsController SearchList         - Search on infringement number
+INFO  2016-04-12 22:59:25,549 204067ms nfringementsController nesAcknowledgement - Acknowledgement of payment page
+INFO  2016-04-12 22:59:25,549 204067ms nfringementsController nesAcknowledgement - Response From Payment Gateway : txn_id=P1604W0005107267&receipt_no=25128730&txn_status=2&account_id=621393&reference=Parking+Infringement&particular=I2BC4912%2c&card_type=5&amount=35.00&response_code=0&response_text=Transaction+Successful&response_message=&customer_email=&authorisation_code=348418&error_message=&error_code=&custom_data=337%24anilkumarkaranam%40gmail.com&card_token=&date=13%2f04%2f2016+5%3a29%3a47+a.m.&checkout_id=&session_id=&blocked_reason=&
+INFO  2016-04-12 23:00:39,170 277688ms nfringementsController ResendMail         - Resend mail
+INFO  2016-04-12 23:03:12,118 430636ms nfringementsController SendMail           - transactionNumber : P1604W0005107267
+INFO  2016-04-12 23:03:12,118 430636ms nfringementsController SendMail           - Mail Sent successfully!.anilkumarkaranam@gmail.com
+INFO  2016-04-12 23:07:39,080 80130ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-04-12 23:07:41,618 82667ms nfringementsController SearchList         - Search for infringement
+INFO  2016-04-12 23:07:41,618 82667ms nfringementsController SearchList         - Search on infringement number
+INFO  2016-04-12 23:08:15,408 116457ms nfringementsController nesAcknowledgement - Acknowledgement of payment page
+INFO  2016-04-12 23:08:15,408 116457ms nfringementsController nesAcknowledgement - Response From Payment Gateway : txn_id=P1604W0005107335&receipt_no=25128802&txn_status=2&account_id=621393&reference=Parking+Infringement&particular=I2BC4912%2c&card_type=5&amount=35.00&response_code=0&response_text=Transaction+Successful&response_message=&customer_email=&authorisation_code=528204&error_message=&error_code=&custom_data=337%24anilkumarkaranam%40gmail.com&card_token=&date=13%2f04%2f2016+5%3a38%3a37+a.m.&checkout_id=&session_id=&blocked_reason=&
+INFO  2016-04-12 23:09:39,982 201031ms nfringementsController ResendMail         - Resend mail
+INFO  2016-04-12 23:10:51,157 272206ms nfringementsController SendMail           - transactionNumber : P1604W0005107335
+INFO  2016-04-12 23:10:51,844 272894ms nfringementsController SendMail           - Mail Sent successfully!.
+INFO  2016-05-20 10:52:00,203 1162736ms nfringementsController Create             - model is valid, mapping to entityInfringementWeb.Models.InfringementModel
+INFO  2016-05-20 10:53:09,572 1232104ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-20 10:53:10,542 1233074ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-20 10:53:11,552 1234084ms nfringementsController Edit               - returning model 
+INFO  2016-05-20 10:54:43,327 1325860ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5MC461
+INFO  2016-05-20 10:54:43,327 1325860ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-20 10:54:47,017 1329550ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-20 10:55:49,019 1391551ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-20 10:55:49,909 1392441ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-20 10:55:51,119 1393651ms nfringementsController Edit               - returning model 
+INFO  2016-05-20 11:43:09,757 4232290ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-20 11:43:10,583 4233116ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-20 11:43:11,414 4233947ms nfringementsController Edit               - returning model 
+INFO  2016-05-20 11:53:14,656 4837188ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5MC461
+INFO  2016-05-20 11:53:14,657 4837189ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-20 11:53:17,518 4840050ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-20 11:53:21,145 4843678ms nfringementsController Edit               - Everything is valid, calling the rest client to save image
+INFO  2016-05-20 11:53:31,181 4853713ms nfringementsController Edit               - Everything is valid, calling the rest client to save image
+INFO  2016-05-20 11:54:09,045 4891577ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-20 11:54:09,874 4892406ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-20 11:54:10,709 4893241ms nfringementsController Edit               - returning model 
+INFO  2016-05-20 12:00:09,951 5252483ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-20 12:01:19,839 5322371ms BuildingController     Create             - Save specific building
+INFO  2016-05-20 12:01:19,840 5322372ms BuildingController     Create             - InfringementWeb.Models.CarParkBuildingModel
+INFO  2016-05-20 12:01:19,841 5322373ms BuildingController     Create             - Model is valid, map to entity model
+INFO  2016-05-20 12:01:23,469 5326001ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-20 12:01:34,843 5337376ms BuildingController     Edit               - Building found create view model and send across to view
+INFO  2016-05-20 12:01:35,664 5338196ms BuildingController     Edit               - Cities Loaded 2
+INFO  2016-05-20 12:05:58,188 5600720ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-20 13:55:07,861 12150394ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-20 13:55:21,217 12163750ms BuildingController     Edit               - Building found create view model and send across to view
+INFO  2016-05-20 13:55:21,997 12164530ms BuildingController     Edit               - Cities Loaded 2
+INFO  2016-05-20 14:00:07,313 12449846ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-20 14:00:08,133 12450666ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-20 14:00:08,956 12451488ms nfringementsController Edit               - returning model 
+INFO  2016-05-20 14:11:22,153 40020ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-20 14:11:34,382 52249ms BuildingController     Edit               - Building found create view model and send across to view
+INFO  2016-05-20 14:11:35,212 53079ms BuildingController     Edit               - Cities Loaded 2
+INFO  2016-05-20 14:13:50,665 188532ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-20 15:59:22,154 6520021ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-20 15:59:38,388 6536255ms BuildingController     Edit               - Building found create view model and send across to view
+INFO  2016-05-20 15:59:39,183 6537050ms BuildingController     Edit               - Cities Loaded 2
+INFO  2016-05-20 16:00:25,567 6583434ms BuildingController     Edit               - Check if model is valid
+INFO  2016-05-20 16:00:25,567 6583434ms BuildingController     Edit               - Model is valid, save building
+INFO  2016-05-20 16:00:28,733 6586600ms BuildingController     Edit               - Save building
+INFO  2016-05-20 16:00:30,673 6588540ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-20 16:02:25,570 6703437ms BuildingController     Edit               - Building found create view model and send across to view
+INFO  2016-05-20 16:04:08,249 6806116ms BuildingController     Edit               - Cities Loaded 2
+INFO  2016-05-20 16:20:10,184 92203ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-20 16:20:48,292 130311ms BuildingController     Edit               - Building found create view model and send across to view
+INFO  2016-05-20 16:20:49,307 131326ms BuildingController     Edit               - Cities Loaded 2
+INFO  2016-05-20 16:21:23,042 165061ms BuildingController     Edit               - Check if model is valid
+INFO  2016-05-20 16:21:23,042 165061ms BuildingController     Edit               - Model is valid, save building
+INFO  2016-05-20 16:21:25,912 167931ms BuildingController     Edit               - Save building
+INFO  2016-05-20 16:21:27,570 169589ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-20 16:21:46,188 188207ms BuildingController     Edit               - Building found create view model and send across to view
+INFO  2016-05-20 16:21:46,983 189002ms BuildingController     Edit               - Cities Loaded 2
+INFO  2016-05-20 16:23:47,646 309665ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-20 16:24:27,043 349062ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-20 16:24:27,893 349912ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-20 16:25:15,031 397050ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-20 16:25:15,864 397883ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-20 16:28:38,435 66716ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-20 16:28:39,321 67602ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-20 16:28:40,251 68532ms nfringementsController Edit               - returning model 
+INFO  2016-05-20 16:31:06,768 215049ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5MC461
+INFO  2016-05-20 16:31:06,770 215051ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-20 16:31:09,705 217986ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-20 16:41:38,864 87818ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-20 16:41:40,269 89223ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-20 16:41:41,142 90095ms nfringementsController Edit               - returning model 
+INFO  2016-05-20 16:42:26,546 135500ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5MC461
+INFO  2016-05-20 16:42:26,548 135502ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-20 16:42:29,994 138947ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-20 16:48:43,515 512469ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-20 16:48:44,400 513354ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-20 16:48:45,263 514217ms nfringementsController Edit               - returning model 
+INFO  2016-05-21 15:16:44,033 80991ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-21 15:33:13,545 109995ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-21 15:33:34,979 131429ms MakesController        Index              - Getting a list of all makes in sort order
+INFO  2016-05-24 10:38:33,581 255766ms nfringementsController Create             - model is valid, mapping to entityInfringementWeb.Models.InfringementModel
+INFO  2016-05-24 10:47:52,201 198607ms nfringementsController Create             - model is valid, mapping to entityInfringementWeb.Models.InfringementModel
+INFO  2016-05-24 10:50:26,066 352471ms nfringementsController Create             - model is valid, mapping to entityInfringementWeb.Models.InfringementModel
+INFO  2016-05-24 11:12:21,366 940671ms nfringementsController Create             - model is valid, mapping to entityInfringementWeb.Models.InfringementModel
+INFO  2016-05-24 11:15:23,621 1122926ms nfringementsController Create             - model is valid, mapping to entityInfringementWeb.Models.InfringementModel
+INFO  2016-05-24 11:17:36,138 1255443ms nfringementsController Create             - model is valid, mapping to entityInfringementWeb.Models.InfringementModel
+INFO  2016-05-24 11:22:26,392 1545697ms nfringementsController Create             - model is valid, mapping to entityInfringementWeb.Models.InfringementModel
+INFO  2016-05-24 11:40:53,504 96374ms nfringementsController Create             - model is valid, mapping to entityInfringementWeb.Models.InfringementModel
+INFO  2016-05-24 11:42:06,166 169035ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-24 11:42:07,096 169965ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-24 11:42:08,026 170895ms nfringementsController Edit               - returning model 
+INFO  2016-05-24 11:42:39,027 201897ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5MC461
+INFO  2016-05-24 11:42:39,027 201897ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-24 11:42:41,017 203887ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-24 13:59:08,805 8391674ms nfringementsController Index              - Search for rego
+INFO  2016-05-24 13:59:08,805 8391674ms nfringementsController Index              - Search on infringement number
+INFO  2016-05-24 13:59:08,805 8391674ms nfringementsController Index              - Search on rego number
+INFO  2016-05-24 13:59:19,627 8402497ms nfringementsController Index              - Search for rego
+INFO  2016-05-24 13:59:19,627 8402497ms nfringementsController Index              - Search on rego number
+INFO  2016-05-24 13:59:44,715 8427584ms nfringementsController Index              - Search for rego
+INFO  2016-05-24 13:59:44,725 8427594ms nfringementsController Index              - Search on rego number
+INFO  2016-05-24 13:59:56,269 8439138ms nfringementsController Index              - Search for rego
+INFO  2016-05-24 13:59:56,269 8439138ms nfringementsController Index              - Search on rego number
+INFO  2016-05-24 14:00:05,014 8447884ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-24 14:00:05,894 8448764ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-24 14:02:46,689 72461ms nfringementsController Index              - Search for rego
+INFO  2016-05-24 14:02:46,712 72484ms nfringementsController Index              - Search on rego number
+INFO  2016-05-24 14:02:54,038 79810ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-24 14:02:54,788 80560ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-24 14:02:55,563 81335ms nfringementsController Edit               - returning model 
+INFO  2016-05-24 14:03:22,147 107918ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5RC361
+INFO  2016-05-24 14:03:22,157 107928ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-24 14:03:23,437 109208ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-24 14:38:39,774 2225546ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-24 14:56:26,181 3291952ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-24 14:56:27,156 3292927ms nfringementsController Edit               - infringement images count: 7
+INFO  2016-05-24 14:56:28,113 3293885ms nfringementsController Edit               - returning model 
+INFO  2016-05-24 14:58:16,961 3402733ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-24 15:57:55,944 402997ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-24 15:57:56,954 404007ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-24 15:57:57,954 405007ms nfringementsController Edit               - returning model 
+INFO  2016-05-24 16:04:35,321 802373ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5RDG1
+INFO  2016-05-24 16:04:35,321 802373ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-24 16:04:38,511 805563ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-24 16:04:42,701 809753ms nfringementsController Edit               - Everything is valid, calling the rest client to save image
+INFO  2016-05-24 16:10:55,036 1182089ms nfringementsController Create             - Infringement model is not valid, return back to create view
+INFO  2016-05-24 16:16:55,604 1542656ms nfringementsController Create             - model is valid, mapping to entityInfringementWeb.Models.InfringementModel
+INFO  2016-05-24 16:20:04,410 1731462ms nfringementsController Create             - model is valid, mapping to entityInfringementWeb.Models.InfringementModel
+INFO  2016-05-24 16:20:53,458 1780511ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-24 16:21:19,503 1806556ms BuildingController     Edit               - Building found create view model and send across to view
+INFO  2016-05-24 16:21:20,473 1807526ms BuildingController     Edit               - Cities Loaded 1
+INFO  2016-05-24 16:21:45,065 1832117ms BuildingController     Edit               - Check if model is valid
+INFO  2016-05-24 16:21:45,065 1832117ms BuildingController     Edit               - Model is valid, save building
+INFO  2016-05-24 16:21:46,045 1833097ms BuildingController     Edit               - Save building
+INFO  2016-05-24 16:21:47,975 1835027ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-24 16:21:59,866 1846919ms BuildingController     Edit               - Building found create view model and send across to view
+INFO  2016-05-24 16:22:00,806 1847859ms BuildingController     Edit               - Cities Loaded 1
+INFO  2016-05-24 19:01:40,462 2120410ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-24 19:01:57,689 2137637ms BuildingController     Edit               - Building found create view model and send across to view
+INFO  2016-05-24 19:01:58,509 2138457ms BuildingController     Edit               - Cities Loaded 1
+INFO  2016-05-24 19:05:11,133 2331081ms BuildingController     Edit               - Check if model is valid
+INFO  2016-05-24 19:05:14,964 2334912ms BuildingController     Edit               - Model is valid, save building
+INFO  2016-05-24 19:06:14,256 2394204ms BuildingController     Edit               - Save building
+INFO  2016-05-24 19:06:17,694 2397642ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-24 19:13:23,787 36045ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-24 19:13:39,823 52080ms BuildingController     Edit               - Building found create view model and send across to view
+INFO  2016-05-24 19:13:40,817 53075ms BuildingController     Edit               - Cities Loaded 1
+INFO  2016-05-24 19:13:51,311 63568ms BuildingController     Edit               - Check if model is valid
+INFO  2016-05-24 19:14:15,538 87795ms BuildingController     Edit               - Model is valid, save building
+INFO  2016-05-24 19:15:00,865 133122ms BuildingController     Edit               - Save building
+INFO  2016-05-24 19:15:15,827 148085ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-24 19:15:27,919 160176ms BuildingController     Edit               - Building found create view model and send across to view
+INFO  2016-05-24 19:15:28,999 161256ms BuildingController     Edit               - Cities Loaded 1
+INFO  2016-05-24 19:15:35,427 167684ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-24 19:16:38,926 231183ms BuildingController     Create             - Save specific building
+INFO  2016-05-24 19:16:40,936 233193ms BuildingController     Create             - InfringementWeb.Models.CarParkBuildingModel
+INFO  2016-05-24 19:17:44,104 296361ms BuildingController     Create             - Save specific building
+INFO  2016-05-24 19:17:44,105 296362ms BuildingController     Create             - InfringementWeb.Models.CarParkBuildingModel
+INFO  2016-05-24 19:18:16,597 328855ms BuildingController     Create             - Save specific building
+INFO  2016-05-24 19:18:17,170 329428ms BuildingController     Create             - InfringementWeb.Models.CarParkBuildingModel
+INFO  2016-05-24 19:18:22,700 334958ms BuildingController     Create             - Model is valid, map to entity model
+INFO  2016-05-24 19:18:56,576 368833ms BuildingController     Index              - Getting a list of all buildings in sort order
+INFO  2016-05-24 19:22:12,752 565010ms BuildingController     Edit               - Building found create view model and send across to view
+INFO  2016-05-24 19:22:13,848 566106ms BuildingController     Edit               - Cities Loaded 1
+INFO  2016-05-24 22:16:44,124 61828ms nfringementsController Index              - Search for rego
+INFO  2016-05-24 22:16:44,223 61927ms nfringementsController Index              - Search on rego number
+INFO  2016-05-24 22:17:00,917 78621ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-24 22:17:01,737 79441ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-24 22:17:02,587 80291ms nfringementsController Edit               - returning model 
+INFO  2016-05-24 22:20:46,102 303805ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5RDN1
+INFO  2016-05-24 22:20:48,815 306518ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-24 22:21:20,512 338215ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-24 22:29:38,316 191310ms nfringementsController Index              - Search for rego
+INFO  2016-05-24 22:29:38,333 191327ms nfringementsController Index              - Search on rego number
+INFO  2016-05-24 22:29:49,588 202582ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-24 22:29:50,454 203448ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-24 22:29:51,355 204349ms nfringementsController Edit               - returning model 
+INFO  2016-05-24 22:31:02,683 275677ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5RC361
+INFO  2016-05-24 22:31:09,349 282344ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-24 22:31:26,180 299175ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-24 22:35:54,491 567486ms nfringementsController Index              - Search for rego
+INFO  2016-05-24 22:35:54,493 567488ms nfringementsController Index              - Search on rego number
+INFO  2016-05-24 22:36:06,214 579209ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-24 22:36:07,046 580041ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-24 22:36:07,881 580876ms nfringementsController Edit               - returning model 
+INFO  2016-05-24 23:44:11,413 51802ms nfringementsController Index              - Search for rego
+INFO  2016-05-24 23:44:11,428 51817ms nfringementsController Index              - Search on rego number
+INFO  2016-05-24 23:44:20,116 60505ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-24 23:44:21,042 61431ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-24 23:44:22,564 62953ms nfringementsController Edit               - returning model 
+INFO  2016-05-24 23:44:45,345 85734ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5RDG1
+INFO  2016-05-24 23:44:45,347 85736ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-24 23:44:47,349 87738ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-24 23:45:06,829 107218ms nfringementsController Index              - Search for rego
+INFO  2016-05-24 23:45:06,831 107220ms nfringementsController Index              - Search on rego number
+INFO  2016-05-24 23:45:19,855 120244ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-24 23:45:20,690 121079ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-24 23:45:21,524 121913ms nfringementsController Edit               - returning model 
+INFO  2016-05-25 00:13:39,997 44413ms nfringementsController Index              - Search for rego
+INFO  2016-05-25 00:13:40,017 44433ms nfringementsController Index              - Search on rego number
+INFO  2016-05-25 00:13:54,049 58466ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-25 00:13:54,907 59324ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-25 00:13:55,815 60231ms nfringementsController Edit               - returning model 
+INFO  2016-05-25 00:14:15,868 80284ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5RDG1
+INFO  2016-05-25 00:14:15,872 80288ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-25 00:14:17,771 82187ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-25 00:14:36,527 100943ms nfringementsController Index              - Search for rego
+INFO  2016-05-25 00:14:36,528 100944ms nfringementsController Index              - Search on rego number
+INFO  2016-05-25 00:14:46,908 111325ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-25 00:14:47,744 112160ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-25 00:14:48,579 112995ms nfringementsController Edit               - returning model 
+INFO  2016-05-25 00:15:08,514 132930ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5RDN1
+INFO  2016-05-25 00:15:08,515 132931ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-25 00:15:09,840 134256ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-25 00:15:24,916 149332ms nfringementsController Index              - Search for rego
+INFO  2016-05-25 00:15:24,917 149333ms nfringementsController Index              - Search on rego number
+INFO  2016-05-25 00:15:40,096 164513ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-25 00:15:40,930 165346ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-25 00:15:41,779 166195ms nfringementsController Edit               - returning model 
+INFO  2016-05-25 00:17:34,743 279159ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5RC361
+INFO  2016-05-25 00:17:36,272 280689ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-25 00:17:46,595 291011ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-25 00:20:56,392 480808ms nfringementsController Index              - Search for rego
+INFO  2016-05-25 00:20:56,394 480810ms nfringementsController Index              - Search on rego number
+INFO  2016-05-25 00:21:18,454 502870ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-25 00:21:19,291 503707ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-25 00:21:20,136 504552ms nfringementsController Edit               - returning model 
+INFO  2016-05-25 00:21:43,128 527545ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5RDN1
+INFO  2016-05-25 00:21:43,129 527546ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-25 00:21:44,467 528884ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-25 00:22:00,855 545272ms nfringementsController Index              - Search for rego
+INFO  2016-05-25 00:22:00,856 545273ms nfringementsController Index              - Search on rego number
+INFO  2016-05-25 00:22:13,441 557857ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-25 00:22:14,273 558689ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-25 00:22:15,121 559538ms nfringementsController Edit               - returning model 
+INFO  2016-05-25 00:22:27,616 572032ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5RDG1
+INFO  2016-05-25 00:22:27,617 572033ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-25 00:22:28,955 573371ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-25 00:22:43,585 588001ms nfringementsController Index              - Search for rego
+INFO  2016-05-25 00:22:43,587 588003ms nfringementsController Index              - Search on rego number
+INFO  2016-05-25 00:22:50,748 595165ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-25 00:22:51,588 596005ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-25 00:22:52,429 596846ms nfringementsController Edit               - returning model 
+INFO  2016-05-25 00:23:03,908 608324ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5RC361
+INFO  2016-05-25 00:23:03,909 608325ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-25 00:23:05,280 609696ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-25 00:23:21,765 626181ms nfringementsController Index              - Search for rego
+INFO  2016-05-25 00:23:21,766 626182ms nfringementsController Index              - Search on rego number
+INFO  2016-05-25 00:23:31,914 636331ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-25 00:23:32,765 637181ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-25 00:23:33,602 638018ms nfringementsController Edit               - returning model 
+INFO  2016-05-25 00:23:45,306 649723ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5RDN1
+INFO  2016-05-25 00:23:45,306 649723ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-25 00:23:46,639 651056ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-25 00:24:01,926 666343ms nfringementsController Index              - Search for rego
+INFO  2016-05-25 00:24:01,927 666344ms nfringementsController Index              - Search on rego number
+INFO  2016-05-25 23:11:29,127 59962ms nfringementsController Index              - Search for rego
+INFO  2016-05-25 23:11:29,257 60092ms nfringementsController Index              - Search on rego number
+INFO  2016-05-25 23:11:50,470 81305ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-25 23:11:51,350 82185ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-25 23:11:52,240 83075ms nfringementsController Edit               - returning model 
+INFO  2016-05-26 00:44:06,584 5617419ms nfringementsController Index              - Search for rego
+INFO  2016-05-26 00:44:06,586 5617421ms nfringementsController Index              - Search on rego number
+INFO  2016-05-26 00:45:22,281 5693116ms nfringementsController Index              - Search for rego
+INFO  2016-05-26 00:45:22,284 5693119ms nfringementsController Index              - Search on rego number
+INFO  2016-05-26 00:45:32,287 5703122ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-26 00:45:33,138 5703973ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-26 00:45:33,992 5704827ms nfringementsController Edit               - returning model 
+INFO  2016-05-27 10:28:31,049 1628246ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-27 10:28:32,029 1629226ms nfringementsController Edit               - infringement images count: 5
+INFO  2016-05-27 10:28:32,919 1630116ms nfringementsController Edit               - returning model 
+INFO  2016-05-27 10:29:51,135 1708331ms nfringementsController Index              - Search for rego
+INFO  2016-05-27 10:29:51,135 1708331ms nfringementsController Index              - Search on rego number
+INFO  2016-05-27 10:30:03,407 1720604ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-27 10:30:04,167 1721364ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-27 10:30:04,917 1722114ms nfringementsController Edit               - returning model 
+INFO  2016-05-27 10:33:51,891 1949088ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5RC361
+INFO  2016-05-27 10:33:51,891 1949088ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-27 10:33:54,621 1951818ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-27 10:34:08,256 1965453ms nfringementsController Index              - Search for rego
+INFO  2016-05-27 10:34:08,258 1965455ms nfringementsController Index              - Search on rego number
+INFO  2016-05-27 10:34:19,353 1976549ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-27 10:34:20,143 1977339ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-27 10:34:20,933 1978129ms nfringementsController Edit               - returning model 
+INFO  2016-05-28 16:21:46,610 155508ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-28 16:21:47,657 156555ms nfringementsController Edit               - infringement images count: 5
+INFO  2016-05-28 16:21:48,570 157468ms nfringementsController Edit               - returning model 
+INFO  2016-05-28 16:22:23,406 192305ms nfringementsController Index              - Search for rego
+INFO  2016-05-28 16:22:23,406 192305ms nfringementsController Index              - Search on rego number
+INFO  2016-05-28 16:22:34,472 203370ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-28 16:22:35,352 204250ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-28 16:22:36,239 205137ms nfringementsController Edit               - returning model 
+INFO  2016-05-28 16:38:02,150 1131049ms nfringementsController Index              - Search for rego
+INFO  2016-05-28 16:38:02,151 1131050ms nfringementsController Index              - Search on rego number
+INFO  2016-05-28 16:38:10,952 1139850ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-28 16:38:11,839 1140737ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-28 16:38:12,695 1141593ms nfringementsController Edit               - returning model 
+INFO  2016-05-28 16:40:53,456 1302355ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-28 16:40:54,319 1303218ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-28 16:40:55,203 1304102ms nfringementsController Edit               - returning model 
+INFO  2016-05-28 16:41:11,067 1319966ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-28 16:41:11,936 1320835ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-28 16:41:12,822 1321721ms nfringementsController Edit               - returning model 
+INFO  2016-05-28 16:53:09,255 54475ms nfringementsController Index              - Search for rego
+INFO  2016-05-28 16:53:09,277 54497ms nfringementsController Index              - Search on rego number
+INFO  2016-05-28 16:53:18,660 63880ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-28 16:53:19,537 64757ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-28 16:53:20,418 65638ms nfringementsController Edit               - returning model 
+INFO  2016-05-28 17:00:54,165 519385ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-28 17:00:55,031 520251ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-28 17:00:55,889 521109ms nfringementsController Edit               - returning model 
+INFO  2016-05-28 23:57:45,912 104805ms nfringementsController Index              - Search for rego
+INFO  2016-05-28 23:57:46,032 104925ms nfringementsController Index              - Search on rego number
+INFO  2016-05-28 23:59:39,452 218346ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-28 23:59:40,372 219266ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-28 23:59:41,332 220226ms nfringementsController Edit               - returning model 
+INFO  2016-05-29 00:39:22,742 44691ms nfringementsController Index              - Search for rego
+INFO  2016-05-29 00:39:22,760 44709ms nfringementsController Index              - Search on rego number
+INFO  2016-05-29 00:39:32,702 54651ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-29 00:39:33,528 55477ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-29 00:39:34,383 56332ms nfringementsController Edit               - returning model 
+INFO  2016-05-29 00:47:16,829 518777ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5RDN1
+INFO  2016-05-29 00:47:17,372 519321ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-29 00:47:38,852 540800ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-29 00:47:57,755 559703ms nfringementsController Edit               - Everything is valid, calling the rest client to save image
+INFO  2016-05-29 00:48:19,717 581665ms nfringementsController Edit               - Everything is valid, calling the rest client to save image
+INFO  2016-05-29 00:49:25,157 647105ms nfringementsController Index              - Search for rego
+INFO  2016-05-29 00:49:25,157 647105ms nfringementsController Index              - Search on rego number
+INFO  2016-05-29 00:49:37,022 658970ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-29 00:49:37,859 659808ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-29 00:49:38,699 660648ms nfringementsController Edit               - returning model 
+INFO  2016-05-29 00:50:18,065 700014ms nfringementsController Index              - Search for rego
+INFO  2016-05-29 00:50:18,066 700015ms nfringementsController Index              - Search on rego number
+INFO  2016-05-29 00:50:25,961 707910ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-29 00:50:26,794 708743ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-29 00:50:27,624 709572ms nfringementsController Edit               - returning model 
+INFO  2016-05-29 00:50:49,721 731670ms nfringementsController Index              - Search for rego
+INFO  2016-05-29 00:50:49,722 731671ms nfringementsController Index              - Search on rego number
+INFO  2016-05-29 00:50:57,017 738966ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-29 00:50:57,851 739800ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-29 00:50:58,693 740642ms nfringementsController Edit               - returning model 
+INFO  2016-05-29 00:51:24,542 766491ms nfringementsController Index              - Search for rego
+INFO  2016-05-29 00:51:24,545 766494ms nfringementsController Index              - Search on rego number
+INFO  2016-05-29 00:51:31,753 773702ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-29 00:51:32,580 774529ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-29 00:51:33,420 775369ms nfringementsController Edit               - returning model 
+INFO  2016-05-29 00:58:02,553 1164502ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-05-29 00:58:09,487 1171436ms CitiesController       Index              - Getting a list of all cities in sort order
+INFO  2016-05-29 01:05:33,306 1615254ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-29 01:05:34,153 1616102ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-29 01:05:34,996 1616945ms nfringementsController Edit               - returning model 
+INFO  2016-05-29 01:06:42,956 1684904ms nfringementsController Edit               - Model is valid, search for infringment in the databaseAP0901
+INFO  2016-05-29 01:06:42,958 1684907ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-29 01:06:44,296 1686245ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-29 01:06:47,916 1689865ms nfringementsController Edit               - Everything is valid, calling the rest client to save image
+INFO  2016-05-29 01:07:24,549 1726498ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-29 01:07:25,362 1727310ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-29 01:07:26,179 1728128ms nfringementsController Edit               - returning model 
+INFO  2016-05-29 01:10:12,107 1894056ms nfringementsController Edit               - Model is valid, search for infringment in the databaseAP0902
+INFO  2016-05-29 01:10:12,108 1894057ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-29 01:10:15,204 1897152ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-29 01:10:18,832 1900780ms nfringementsController Edit               - Everything is valid, calling the rest client to save image
+INFO  2016-05-29 01:15:38,164 2220113ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-29 01:15:39,070 2221019ms nfringementsController Edit               - infringement images count: 5
+INFO  2016-05-29 01:15:39,974 2221923ms nfringementsController Edit               - returning model 
+INFO  2016-05-29 01:30:31,262 191700ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-29 01:30:32,132 192571ms nfringementsController Edit               - infringement images count: 5
+INFO  2016-05-29 01:30:32,993 193432ms nfringementsController Edit               - returning model 
+INFO  2016-05-29 01:31:06,660 227098ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-29 01:31:07,492 227931ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-29 01:31:08,320 228759ms nfringementsController Edit               - returning model 
+INFO  2016-05-29 01:33:24,816 365254ms nfringementsController Edit               - Model is valid, search for infringment in the databaseAP0905
+INFO  2016-05-29 01:33:24,818 365256ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-05-29 01:33:26,163 366601ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-05-29 01:33:29,914 370353ms nfringementsController Edit               - Everything is valid, calling the rest client to save image
+INFO  2016-05-29 01:33:46,561 387000ms nfringementsController Edit               - Everything is valid, calling the rest client to save image
+INFO  2016-05-29 01:34:41,317 441755ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-29 01:34:42,149 442587ms nfringementsController Edit               - infringement images count: 2
+INFO  2016-05-29 01:34:42,976 443414ms nfringementsController Edit               - returning model 
+INFO  2016-05-30 15:05:02,666 194880ms nfringementsController Index              - Search for rego
+INFO  2016-05-30 15:05:02,706 194920ms nfringementsController Index              - Search on rego number
+INFO  2016-05-30 15:05:11,918 204131ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-30 15:05:12,758 204971ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-30 15:05:13,658 205871ms nfringementsController Edit               - returning model 
+INFO  2016-05-30 16:55:00,553 6792766ms nfringementsController Index              - Search for rego
+INFO  2016-05-30 16:55:00,554 6792767ms nfringementsController Index              - Search on rego number
+INFO  2016-05-30 16:55:07,900 6800113ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-30 16:55:08,761 6800974ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-30 16:55:09,596 6801809ms nfringementsController Edit               - returning model 
+INFO  2016-05-30 17:42:04,515 9616728ms nfringementsController Index              - Search for rego
+INFO  2016-05-30 17:42:04,515 9616728ms nfringementsController Index              - Search on rego number
+INFO  2016-05-30 17:42:11,234 9623448ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-30 17:42:12,002 9624216ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-30 17:42:12,779 9624992ms nfringementsController Edit               - returning model 
+INFO  2016-05-30 17:59:04,037 10636250ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-30 17:59:04,867 10637080ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-30 17:59:05,697 10637910ms nfringementsController Edit               - returning model 
+INFO  2016-05-30 18:11:37,353 35532ms nfringementsController Index              - Search for rego
+INFO  2016-05-30 18:11:37,375 35554ms nfringementsController Index              - Search on rego number
+INFO  2016-05-30 18:11:48,054 46233ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-30 18:11:48,874 47053ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-30 18:11:50,243 48422ms nfringementsController Edit               - returning model 
+INFO  2016-05-30 18:24:33,830 31989ms nfringementsController Index              - Search for rego
+INFO  2016-05-30 18:24:33,849 32008ms nfringementsController Index              - Search on rego number
+INFO  2016-05-30 18:24:50,381 48540ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-30 18:24:51,195 49354ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-30 18:24:52,030 50189ms nfringementsController Edit               - returning model 
+INFO  2016-05-30 18:31:37,334 25923ms nfringementsController Index              - Search for rego
+INFO  2016-05-30 18:31:37,351 25940ms nfringementsController Index              - Search on rego number
+INFO  2016-05-30 18:31:45,706 34295ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-30 18:31:46,514 35104ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-30 18:31:47,364 35954ms nfringementsController Edit               - returning model 
+INFO  2016-05-30 18:48:57,921 195881ms nfringementsController Index              - Search for rego
+INFO  2016-05-30 18:48:57,941 195901ms nfringementsController Index              - Search on rego number
+INFO  2016-05-30 18:49:08,349 206310ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-30 18:49:09,199 207160ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-30 18:49:10,189 208150ms nfringementsController Edit               - returning model 
+INFO  2016-05-30 18:53:28,240 38988ms nfringementsController Index              - Search for rego
+INFO  2016-05-30 18:53:28,255 39003ms nfringementsController Index              - Search on rego number
+INFO  2016-05-30 18:53:38,383 49131ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-30 18:53:39,219 49967ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-30 18:53:40,075 50823ms nfringementsController Edit               - returning model 
+INFO  2016-05-30 18:57:48,165 27255ms nfringementsController Index              - Search for rego
+INFO  2016-05-30 18:57:48,186 27276ms nfringementsController Index              - Search on rego number
+INFO  2016-05-30 18:57:55,552 34642ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-30 18:57:56,339 35430ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-30 18:57:57,172 36263ms nfringementsController Edit               - returning model 
+INFO  2016-05-30 19:02:23,326 302416ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-30 19:02:24,156 303246ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-30 19:02:24,988 304078ms nfringementsController Edit               - returning model 
+INFO  2016-05-30 19:08:53,463 32079ms nfringementsController Index              - Search for rego
+INFO  2016-05-30 19:08:53,482 32098ms nfringementsController Index              - Search on rego number
+INFO  2016-05-30 19:09:07,306 45923ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-30 19:09:08,107 46724ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-30 19:09:08,891 47507ms nfringementsController Edit               - returning model 
+INFO  2016-05-30 19:13:34,463 313080ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-30 19:13:35,353 313970ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-30 19:13:36,303 314920ms nfringementsController Edit               - returning model 
+INFO  2016-05-30 19:16:38,687 27810ms nfringementsController Index              - Search for rego
+INFO  2016-05-30 19:16:38,704 27827ms nfringementsController Index              - Search on rego number
+INFO  2016-05-30 19:16:48,444 37568ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-30 19:16:49,268 38391ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-30 19:16:50,608 39731ms nfringementsController Edit               - returning model 
+INFO  2016-05-30 19:24:53,657 32666ms nfringementsController Index              - Search for rego
+INFO  2016-05-30 19:24:53,674 32683ms nfringementsController Index              - Search on rego number
+INFO  2016-05-30 19:25:01,616 40625ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-30 19:25:02,388 41397ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-30 19:25:03,183 42192ms nfringementsController Edit               - returning model 
+INFO  2016-05-30 19:56:44,264 30197ms nfringementsController Index              - Search for rego
+INFO  2016-05-30 19:56:44,281 30214ms nfringementsController Index              - Search on rego number
+INFO  2016-05-30 19:56:51,029 36963ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-30 19:56:51,832 37766ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-30 19:56:52,675 38609ms nfringementsController Edit               - returning model 
+INFO  2016-05-30 23:36:27,114 38304ms nfringementsController Index              - Search for rego
+INFO  2016-05-30 23:36:27,132 38322ms nfringementsController Index              - Search on rego number
+INFO  2016-05-30 23:36:37,205 48395ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-30 23:36:38,144 49334ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-30 23:36:39,109 50298ms nfringementsController Edit               - returning model 
+INFO  2016-05-31 00:10:13,608 2064798ms nfringementsController Index              - Search for rego
+INFO  2016-05-31 00:10:13,612 2064802ms nfringementsController Index              - Search on rego number
+INFO  2016-05-31 00:10:25,653 2076843ms nfringementsController Details            - Infringement found
+INFO  2016-05-31 00:10:56,561 2107751ms nfringementsController Index              - Search for rego
+INFO  2016-05-31 00:10:56,562 2107752ms nfringementsController Index              - Search on rego number
+INFO  2016-05-31 00:11:07,094 2118284ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-31 00:11:07,961 2119151ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-31 00:11:08,813 2120003ms nfringementsController Edit               - returning model 
+INFO  2016-05-31 00:35:48,980 41798ms nfringementsController Index              - Search for rego
+INFO  2016-05-31 00:35:49,003 41821ms nfringementsController Index              - Search on rego number
+INFO  2016-05-31 00:36:12,589 65407ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-31 00:36:13,452 66270ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-31 00:36:14,353 67170ms nfringementsController Edit               - returning model 
+INFO  2016-05-31 00:53:06,847 132127ms nfringementsController Index              - Search for rego
+INFO  2016-05-31 00:53:06,863 132143ms nfringementsController Index              - Search on rego number
+INFO  2016-05-31 00:56:27,577 332857ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-31 00:56:28,439 333719ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-31 00:56:29,941 335221ms nfringementsController Edit               - returning model 
+INFO  2016-05-31 01:14:53,985 27341ms nfringementsController Index              - Search for rego
+INFO  2016-05-31 01:14:54,012 27368ms nfringementsController Index              - Search on rego number
+INFO  2016-05-31 01:15:02,548 35904ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-31 01:15:03,420 36776ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-31 01:15:04,292 37648ms nfringementsController Edit               - returning model 
+INFO  2016-05-31 11:20:24,674 103900ms nfringementsController Index              - Search for rego
+INFO  2016-05-31 11:20:24,807 104033ms nfringementsController Index              - Search on rego number
+INFO  2016-05-31 11:21:10,678 149904ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-31 11:21:12,474 151700ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-31 11:21:14,125 153351ms nfringementsController Edit               - returning model 
+INFO  2016-05-31 11:41:51,887 1391112ms nfringementsController Index              - Search for rego
+INFO  2016-05-31 11:41:51,887 1391112ms nfringementsController Index              - Search on rego number
+INFO  2016-05-31 11:42:00,341 1399567ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-31 11:42:01,213 1400439ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-31 11:42:02,064 1401290ms nfringementsController Edit               - returning model 
+INFO  2016-05-31 12:53:19,287 69015ms nfringementsController Index              - Search for rego
+INFO  2016-05-31 12:53:19,306 69034ms nfringementsController Index              - Search on rego number
+INFO  2016-05-31 12:53:30,230 79958ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-31 12:53:31,096 80824ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-31 12:53:32,578 82306ms nfringementsController Edit               - returning model 
+INFO  2016-05-31 12:54:50,185 159914ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-31 12:54:50,987 160715ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-31 12:54:51,871 161599ms nfringementsController Edit               - returning model 
+INFO  2016-05-31 17:08:39,073 24071ms nfringementsController Index              - Search for rego
+INFO  2016-05-31 17:08:39,094 24092ms nfringementsController Index              - Search on rego number
+INFO  2016-05-31 17:08:46,814 31812ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-31 17:08:47,671 32669ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-31 17:08:48,899 33897ms nfringementsController Edit               - returning model 
+INFO  2016-05-31 17:10:02,073 107072ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-31 17:10:02,905 107904ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-31 17:10:03,738 108737ms nfringementsController Edit               - returning model 
+INFO  2016-05-31 17:11:26,265 191263ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-31 17:11:27,108 192106ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-31 17:11:27,956 192955ms nfringementsController Edit               - returning model 
+INFO  2016-05-31 17:13:11,477 296475ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-05-31 17:13:12,230 297229ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-05-31 17:13:12,985 297984ms nfringementsController Edit               - returning model 
+INFO  2016-06-01 17:21:58,541 3164470ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-06-01 17:22:37,229 3203158ms nfringementsController Index              - Search for rego
+INFO  2016-06-01 17:22:37,229 3203158ms nfringementsController Index              - Search on rego number
+INFO  2016-06-01 17:22:48,371 3214300ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-06-01 17:22:49,231 3215160ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-06-01 17:22:50,171 3216100ms nfringementsController Edit               - returning model 
+INFO  2016-06-01 17:24:58,307 3344236ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-06-01 17:24:59,257 3345186ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-06-01 17:25:00,197 3346126ms nfringementsController Edit               - returning model 
+INFO  2016-06-01 17:25:25,522 3371451ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5RDG1
+INFO  2016-06-01 17:25:25,532 3371461ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-06-01 17:25:26,972 3372901ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-06-01 17:25:49,060 3394989ms nfringementsController Index              - Search for rego
+INFO  2016-06-01 17:25:49,061 3394990ms nfringementsController Index              - Search on rego number
+INFO  2016-06-01 17:26:01,667 3407597ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-06-01 17:26:02,927 3408857ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-06-01 17:26:03,837 3409767ms nfringementsController Edit               - returning model 
+INFO  2016-06-01 17:26:17,844 3423773ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5RDN1
+INFO  2016-06-01 17:26:17,844 3423773ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-06-01 17:26:19,274 3425203ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-06-01 17:27:40,836 3506765ms nfringementsController Index              - Search for rego
+INFO  2016-06-01 17:27:40,836 3506765ms nfringementsController Index              - Search on rego number
+INFO  2016-06-01 17:27:52,742 3518671ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-06-01 17:27:53,642 3519571ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-06-01 17:27:54,582 3520511ms nfringementsController Edit               - returning model 
+INFO  2016-06-01 17:28:46,454 3572383ms nfringementsController Edit               - Model is valid, search for infringment in the databaseI5RC361
+INFO  2016-06-01 17:28:46,454 3572383ms nfringementsController Edit               - InfringementWeb.Models.InfringementModel
+INFO  2016-06-01 17:28:49,709 3575638ms nfringementsController Edit               - Infrin. found, updating the database entity
+INFO  2016-06-01 17:29:11,610 3597539ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-06-01 17:29:30,115 3616044ms nfringementsController SearchList         - Search for infringement
+INFO  2016-06-01 17:29:30,115 3616044ms nfringementsController SearchList         - Search on rego number
+INFO  2016-06-01 23:30:47,557 620844ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-06-01 23:30:57,386 630673ms nfringementsController SearchList         - Search for infringement
+INFO  2016-06-01 23:30:57,386 630673ms nfringementsController SearchList         - Search on rego number
+INFO  2016-06-01 23:33:45,984 799271ms nfringementsController SearchList         - Search for infringement
+INFO  2016-06-01 23:33:45,984 799271ms nfringementsController SearchList         - Search on rego number
+INFO  2016-06-02 12:48:16,595 152104ms MakesController        Index              - Getting a list of all makes in sort order
+INFO  2016-06-02 12:50:05,338 260848ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-02 12:50:52,324 307834ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-02 12:52:04,952 380461ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-02 13:12:25,107 1600616ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-02 18:34:35,909 20931419ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-06-02 18:34:51,453 20946962ms nfringementsController SearchList         - Search for infringement
+INFO  2016-06-02 18:34:51,455 20946964ms nfringementsController SearchList         - Search on rego number
+INFO  2016-06-02 18:39:54,169 21249679ms nfringementsController SearchList         - Search for infringement
+INFO  2016-06-02 18:39:54,170 21249680ms nfringementsController SearchList         - Search on rego number
+INFO  2016-06-02 19:48:43,146 631350ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-06-02 19:48:52,112 640316ms nfringementsController SearchList         - Search for infringement
+INFO  2016-06-02 19:48:52,113 640317ms nfringementsController SearchList         - Search on rego number
+INFO  2016-06-02 19:52:46,387 874591ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-02 23:16:09,193 95099ms CarModelsController    Index              - Getting a list of all models in sort order
+INFO  2016-06-02 23:27:26,489 772395ms MakesController        Index              - Getting a list of all makes in sort order
+INFO  2016-06-02 23:29:37,534 903440ms CarModelsController    Index              - Getting a list of all models in sort order
+INFO  2016-06-02 23:34:37,010 1202916ms CarModelsController    Index              - Getting a list of all models in sort order
+INFO  2016-06-02 23:34:47,285 1213191ms CarModelsController    Index              - Getting a list of all models in sort order
+INFO  2016-06-02 23:34:51,064 1216970ms ngementTypesController Index              - Getting a list of all infringement types in sort order
+INFO  2016-06-02 23:35:38,169 1264075ms ngementTypesController Index              - Getting a list of all infringement types in sort order
+INFO  2016-06-02 23:36:19,176 1305082ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-06-02 23:36:27,299 1313205ms nfringementsController SearchList         - Search for infringement
+INFO  2016-06-02 23:36:27,301 1313207ms nfringementsController SearchList         - Search on rego number
+INFO  2016-06-02 23:54:47,797 900473ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-06-02 23:54:52,728 905404ms nfringementsController SearchList         - Search for infringement
+INFO  2016-06-02 23:54:52,729 905405ms nfringementsController SearchList         - Search on rego number
+INFO  2016-06-02 23:55:00,693 913370ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-06-02 23:55:06,703 919380ms nfringementsController SearchList         - Search for infringement
+INFO  2016-06-02 23:55:06,703 919380ms nfringementsController SearchList         - Search on rego number
+INFO  2016-06-06 18:01:56,032 541783ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-06-06 18:16:07,086 1392837ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 18:20:50,003 1675754ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 18:30:52,826 2278577ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 18:31:18,962 2304713ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 18:32:18,301 2364052ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 18:35:26,607 2552358ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 18:35:52,352 2578103ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 18:36:25,882 2611633ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 18:51:42,669 368143ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 18:54:27,868 533341ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 18:55:42,330 607803ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 19:11:19,495 1544968ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 19:12:06,667 1592141ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 19:15:13,335 1778808ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 19:15:39,011 1804485ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 19:17:04,349 1889823ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 19:17:43,702 1929175ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 19:18:49,598 1995072ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 19:19:32,161 2037634ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 19:21:33,632 2159105ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 19:22:07,587 2193060ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 19:23:15,352 2260825ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 19:23:55,210 2300683ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 19:24:17,885 2323358ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 19:25:49,438 2414912ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 19:26:19,588 2445061ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 19:57:49,320 407433ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 19:58:36,255 454367ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 22:29:51,429 587162ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 22:31:16,996 672728ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 22:47:28,343 1644076ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-06 22:47:51,557 1667289ms nfringementsController Downloads          - Search on infringement date range
+INFO  2016-06-10 14:10:54,768 150750ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-06-10 14:11:02,740 158723ms nfringementsController SearchList         - Search for infringement
+INFO  2016-06-10 14:11:02,742 158725ms nfringementsController SearchList         - Search on rego number
+INFO  2016-06-10 15:08:24,734 53780ms nfringementsController Search             - Render page to search for infrngements
+INFO  2016-06-10 15:08:28,969 58015ms nfringementsController SearchList         - Search for infringement
+INFO  2016-06-10 15:08:28,971 58017ms nfringementsController SearchList         - Search on rego number
+INFO  2016-06-10 18:40:24,412 83395ms nfringementsController Index              - Search for rego
+INFO  2016-06-10 18:40:24,429 83412ms nfringementsController Index              - Search on rego number
+INFO  2016-06-10 18:40:31,635 90619ms nfringementsController Edit               - infringement found, setting up viewbag and returning view
+INFO  2016-06-10 18:40:32,476 91460ms nfringementsController Edit               - infringement images count: 0
+INFO  2016-06-10 18:40:33,320 92304ms nfringementsController Edit               - returning model 

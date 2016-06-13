@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="752dc80fe245406fa2c34f2894aec7d2" Name="Diagram1" ZoomLevel="91">
+        <EntityTypeShape EntityType="InfringementModel.city" Width="1.5" PointX="1.5" PointY="12.875" />
+        <EntityTypeShape EntityType="InfringementModel.infringementpicture" Width="1.5" PointX="5.75" PointY="1.875" />
+        <EntityTypeShape EntityType="InfringementModel.infringementtype" Width="1.5" PointX="0.75" PointY="7.625" />
+        <EntityTypeShape EntityType="InfringementModel.make" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="InfringementModel.parking_location" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="InfringementModel.user" Width="1.5" PointX="5.75" PointY="4.875" />
+        <AssociationConnector Association="InfringementModel.cty" />
+        <EntityTypeShape EntityType="InfringementModel.infringementstatu" Width="1.5" PointX="8.375" PointY="0.75" />
+        <AssociationConnector Association="InfringementModel.a3" />
+        <EntityTypeShape EntityType="InfringementModel.carmodel" Width="1.5" PointX="3" PointY="8.75" />
+        <AssociationConnector Association="InfringementModel.a" />
+        <EntityTypeShape EntityType="InfringementModel.country" Width="1.5" PointX="8.375" PointY="3.75" />
+        <EntityTypeShape EntityType="InfringementModel.infringement" Width="1.5" PointX="3" PointY="0.75" />
+        <AssociationConnector Association="InfringementModel.a1" />
+        <AssociationConnector Association="InfringementModel.a2" />
+        <AssociationConnector Association="InfringementModel.b1" />
+        <AssociationConnector Association="InfringementModel.c1" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

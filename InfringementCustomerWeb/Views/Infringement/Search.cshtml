@@ -1,0 +1,98 @@
+﻿@model InfringementCustomerWeb.Models.SearchInfringementModel
+
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using (Html.BeginForm("SearchList", "Infringement", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <a href="~/Home/Index">
+                <img src="~/Content/images/me_logo_grey_L.jpg" width="350" /><br /><hr style="margin-top: 20px; margin-bottom: 20px; border: 0;   border-top: 3px solid #000000;" />
+            </a>
+        </div>
+    </div>
+    <div class="form-horizontal">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <h4>Infringement Payments</h4>
+                <hr />
+            </div>
+        </div>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="col-md-3">
+                @Html.LabelFor(model => model.SearchOnRegoNumber, htmlAttributes: new { @class = "control-label col-md-12" })
+            </div>
+
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.SearchOnRegoNumber, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SearchOnRegoNumber, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-2">
+                <input id="Submit" name="Submit" type="submit" value="Search By Registration Number" class="btn btn-default" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-3">
+                @Html.LabelFor(model => model.SearchString, htmlAttributes: new { @class = "control-label col-md-12" })
+            </div>
+
+            <div class="col-md-4">
+                @Html.EditorFor(model => model.SearchString, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SearchString, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-2">
+                <input id="Submit" name="Submit" type="submit" value="Search by Infringement Number" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<p>Payments for tickets issued within the last 24 hours.</p>
+
+<p>
+    @*Infringement details are normally transferred to our online services within 24 hours of issue.
+    If your ticket has been issued within the last 24 hours, you may need to wait before you can pay via online
+    services.*@
+    Infringement details are normally transferred to our online services within 24 hours of issue.
+    If your notice has been issued within the last 24 hours, you may need to wait before you can pay via our online
+    service.
+</p>
+
+<p>21 days to pay the infringement.</p>
+
+<p>
+    @*If you get a ticket, you have 21 days to pay the fine.  If you don't, you'll receive a reminder notice.
+    If no payment is received after a further 21 days, the overdue fine will be lodged with a debt-collection
+    agency for recovery.*@
+    You have 21 days to pay the breach notice. If you don't, you'll receive a reminder notice. 
+    If no payment is received after a further 21 days, the overdue fine will be lodged with a debt collection
+    agency for recovery.
+</p>
+
+<p>
+    @*Fines that remain unpaid after recovery efforts will be lodged with the Ministry of Justice, who may
+    take action and also impose a fee on top of the fine.  Find out more about the infringement notice process.*@
+    Breach notices that remain unpaid after recovery efforts will be lodged with the Ministry of Justice, who may
+    take action and also impose an additional fee. 
+</p>
+
+<div>
+    @*<a href="~/Home/Contact" class="btn btn-default">If you choose to appeal an Infringement or would like to Contact Us</a>*@
+    <a href="~/Home/Contact" class="btn btn-default">Click here if you choose to appeal a breach notice or would like to contact us</a>
+
+</div>
+
+@*<div>
+        @Html.ActionLink("Back to List", "Search")
+    </div>*@
+@*@Html.ActionLink("TestMail", "TestSendMail", new { })*@
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

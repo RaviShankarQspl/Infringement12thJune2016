@@ -1,0 +1,137 @@
+﻿@model InfringementWeb.infringement
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>Are you sure you want to delete this?</h3>
+
+<div>
+    @if(@ViewBag.ErrorMessage != null)
+    {
+        <span>@ViewBag.ErrorMessage</span>
+    }
+
+</div>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IncidentTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IncidentTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rego)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rego)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Model)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comment)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.User)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UploadTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UploadTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Latitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Latitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Longitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Longitude)
+        </dd>
+
+        <dt>
+            Parking Location
+            @*@Html.DisplayNameFor(model => model.parking_location.Name)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.parking_location.Name)
+        </dd>
+
+        <dt>
+            Car Make
+            @*@Html.DisplayNameFor(model => model.make.Name)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.make.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.infringementtype.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.infringementtype.Type)
+        </dd>
+
+    </dl>
+
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

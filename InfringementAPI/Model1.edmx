@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="InfringementModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="carmodel">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="MakeId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="SortOrder" Type="int" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="city">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="SortOrder" Type="int" />
+        </EntityType>
+        <EntityType Name="countries">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CountryName" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="400" />
+        </EntityType>
+        <EntityType Name="infringement">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IncidentTime" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="Number" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="Rego" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="ParkingLocationId" Type="int" Nullable="false" />
+          <Property Name="MakeId" Type="int" />
+          <Property Name="Model" Type="varchar" MaxLength="300" />
+          <Property Name="InfringementTypeId" Type="int" Nullable="false" />
+          <Property Name="Amount" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="Comment" Type="varchar" MaxLength="4000" />
+          <Property Name="User" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="UploadTime" Type="datetime" Precision="0" />
+          <Property Name="Latitude" Type="varchar" MaxLength="20" />
+          <Property Name="Longitude" Type="varchar" MaxLength="20" />
+          <Property Name="StatusId" Type="int" Nullable="false" />
+          <Property Name="Pay" Type="bool" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" Precision="0" />
+          <Property Name="OtherMake" Type="varchar" MaxLength="250" />
+          <Property Name="OtherModel" Type="varchar" MaxLength="250" />
+          <Property Name="ModelId" Type="int" />
+          <Property Name="DueDate" Type="date" />
+          <Property Name="AfterDueDate" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="OwnerName" Type="varchar" MaxLength="250" />
+          <Property Name="Street1" Type="varchar" MaxLength="250" />
+          <Property Name="Street2" Type="varchar" MaxLength="250" />
+          <Property Name="Suburb" Type="varchar" MaxLength="250" />
+          <Property Name="PostCode" Type="varchar" MaxLength="50" />
+          <Property Name="CountryId" Type="varchar" MaxLength="150" />
+          <Property Name="CityName" Type="varchar" MaxLength="250" />
+          <Property Name="OtherInfringementType" Type="varchar" MaxLength="250" />
+          <Property Name="GeneratedFrom" Type="int" />
+          <Property Name="PaymentType" Type="varchar" MaxLength="150" />
+          <Property Name="CityId" Type="int" />
+        </EntityType>
+        <EntityType Name="infringementpictures">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="InfringementId" Type="int" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="45" />
+          <Property Name="Location" Type="varchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Longitude" Type="varchar" MaxLength="45" />
+          <Property Name="Latitude" Type="varchar" MaxLength="45" />
+        </EntityType>
+        <EntityType Name="infringementstatus">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="200" />
+          <Property Name="SortOrder" Type="int" />
+        </EntityType>
+        <EntityType Name="infringementtype">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Type" Type="varchar" MaxLength="4000" Nullable="false" />
+          <Property Name="Amount" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+          <Property Name="SortOrder" Type="int" />
+        </EntityType>
+        <EntityType Name="make">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="SortOrder" Type="int" />
+        </EntityType>
+        <EntityType Name="parking_location">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CityId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="255" />
+          <Property Name="Address" Type="varchar" MaxLength="400" />
+          <Property Name="ImageLocation" Type="varchar" MaxLength="4000" />
+          <Property Name="Description" Type="varchar" MaxLength="45" />
+          <Property Name="Longitude" Type="varchar" MaxLength="45" />
+          <Property Name="Latitude" Type="varchar" MaxLength="45" />
+          <Property Name="SortOrder" Type="int" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirstName" Type="varchar" MaxLength="200" />
+          <Property Name="LastName" Type="varchar" MaxLength="200" />
+          <Property Name="DateOfBirth" Type="datetime" Precision="0" />
+          <Property Name="Address1" Type="varchar" MaxLength="400" />
+          <Property Name="Address2" Type="varchar" MaxLength="400" />
+          <Property Name="Suburb" Type="varchar" MaxLength="100" />
+          <Property Name="City" Type="varchar" MaxLength="100" />
+          <Property Name="HomePhone" Type="varchar" MaxLength="45" />
+          <Property Name="MobilePhone" Type="varchar" MaxLength="45" />
+          <Property Name="Email" Type="varchar" MaxLength="200" />
+          <Property Name="JobTitle" Type="varchar" MaxLength="200" />
+          <Property Name="PhotoLocation" Type="varchar" MaxLength="1000" />
+          <Property Name="UserType" Type="int" />
+          <Property Name="IsActive" Type="bool" />
+          <Property Name="UserPassword" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="a">
+          <End Role="make" Type="Self.make" Multiplicity="1" />
+          <End Role="carmodel" Type="Self.carmodel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="make">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="carmodel">
+              <PropertyRef Name="MakeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="a1">
+          <End Role="parking_location" Type="Self.parking_location" Multiplicity="1" />
+          <End Role="infringement" Type="Self.infringement" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="parking_location">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="infringement">
+              <PropertyRef Name="ParkingLocationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="a2">
+          <End Role="infringement" Type="Self.infringement" Multiplicity="1" />
+          <End Role="infringementpictures" Type="Self.infringementpictures" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="infringement">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="infringementpictures">
+              <PropertyRef Name="InfringementId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="a3">
+          <End Role="city" Type="Self.city" Multiplicity="1" />
+          <End Role="parking_location" Type="Self.parking_location" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="city">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="parking_location">
+              <PropertyRef Name="CityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="b1">
+          <End Role="make" Type="Self.make" Multiplicity="0..1" />
+          <End Role="infringement" Type="Self.infringement" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="make">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="infringement">
+              <PropertyRef Name="MakeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="c1">
+          <End Role="infringementtype" Type="Self.infringementtype" Multiplicity="1" />
+          <End Role="infringement" Type="Self.infringement" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="infringementtype">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="infringement">
+              <PropertyRef Name="InfringementTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="InfringementModelStoreContainer">
+          <EntitySet Name="carmodel" EntityType="Self.carmodel" Schema="infringement" store:Type="Tables" />
+          <EntitySet Name="city" EntityType="Self.city" Schema="infringement" store:Type="Tables" />
+          <EntitySet Name="countries" EntityType="Self.countries" Schema="infringement" store:Type="Tables" />
+          <EntitySet Name="infringement" EntityType="Self.infringement" Schema="infringement" store:Type="Tables" />
+          <EntitySet Name="infringementpictures" EntityType="Self.infringementpictures" Schema="infringement" store:Type="Tables" />
+          <EntitySet Name="infringementstatus" EntityType="Self.infringementstatus" Schema="infringement" store:Type="Tables" />
+          <EntitySet Name="infringementtype" EntityType="Self.infringementtype" Schema="infringement" store:Type="Tables" />
+          <EntitySet Name="make" EntityType="Self.make" Schema="infringement" store:Type="Tables" />
+          <EntitySet Name="parking_location" EntityType="Self.parking_location" Schema="infringement" store:Type="Tables" />
+          <EntitySet Name="user" EntityType="Self.user" Schema="infringement" store:Type="Tables" />
+          <AssociationSet Name="a" Association="Self.a">
+            <End Role="make" EntitySet="make" />
+            <End Role="carmodel" EntitySet="carmodel" />
+          </AssociationSet>
+          <AssociationSet Name="a1" Association="Self.a1">
+            <End Role="parking_location" EntitySet="parking_location" />
+            <End Role="infringement" EntitySet="infringement" />
+          </AssociationSet>
+          <AssociationSet Name="a2" Association="Self.a2">
+            <End Role="infringement" EntitySet="infringement" />
+            <End Role="infringementpictures" EntitySet="infringementpictures" />
+          </AssociationSet>
+          <AssociationSet Name="a3" Association="Self.a3">
+            <End Role="city" EntitySet="city" />
+            <End Role="parking_location" EntitySet="parking_location" />
+          </AssociationSet>
+          <AssociationSet Name="b1" Association="Self.b1">
+            <End Role="make" EntitySet="make" />
+            <End Role="infringement" EntitySet="infringement" />
+          </AssociationSet>
+          <AssociationSet Name="c1" Association="Self.c1">
+            <End Role="infringementtype" EntitySet="infringementtype" />
+            <End Role="infringement" EntitySet="infringement" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="InfringementModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="infringementEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="cities" EntityType="InfringementModel.city" />
+          <EntitySet Name="infringementpictures" EntityType="InfringementModel.infringementpicture" />
+          <EntitySet Name="infringementtypes" EntityType="InfringementModel.infringementtype" />
+          <EntitySet Name="makes" EntityType="InfringementModel.make" />
+          <EntitySet Name="parking_location" EntityType="InfringementModel.parking_location" />
+          <EntitySet Name="users" EntityType="InfringementModel.user" />
+          <AssociationSet Name="cty" Association="InfringementModel.cty">
+            <End Role="city" EntitySet="cities" />
+            <End Role="parking_location" EntitySet="parking_location" />
+          </AssociationSet>
+          <EntitySet Name="infringementstatus" EntityType="InfringementModel.infringementstatu" />
+          <AssociationSet Name="a3" Association="InfringementModel.a3">
+            <End Role="city" EntitySet="cities" />
+            <End Role="parking_location" EntitySet="parking_location" />
+          </AssociationSet>
+          <EntitySet Name="carmodels" EntityType="InfringementModel.carmodel" />
+          <AssociationSet Name="a" Association="InfringementModel.a">
+            <End Role="make" EntitySet="makes" />
+            <End Role="carmodel" EntitySet="carmodels" />
+          </AssociationSet>
+          <EntitySet Name="countries" EntityType="InfringementModel.country" />
+          <EntitySet Name="infringements" EntityType="InfringementModel.infringement" />
+          <AssociationSet Name="a1" Association="InfringementModel.a1">
+            <End Role="parking_location" EntitySet="parking_location" />
+            <End Role="infringement" EntitySet="infringements" />
+          </AssociationSet>
+          <AssociationSet Name="a2" Association="InfringementModel.a2">
+            <End Role="infringement" EntitySet="infringements" />
+            <End Role="infringementpicture" EntitySet="infringementpictures" />
+          </AssociationSet>
+          <AssociationSet Name="b1" Association="InfringementModel.b1">
+            <End Role="make" EntitySet="makes" />
+            <End Role="infringement" EntitySet="infringements" />
+          </AssociationSet>
+          <AssociationSet Name="c1" Association="InfringementModel.c1">
+            <End Role="infringementtype" EntitySet="infringementtypes" />
+            <End Role="infringement" EntitySet="infringements" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="city">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="SortOrder" Type="Int32" />
+          <NavigationProperty Name="parking_location" Relationship="InfringementModel.cty" FromRole="city" ToRole="parking_location" />
+          <NavigationProperty Name="parking_location1" Relationship="InfringementModel.a3" FromRole="city" ToRole="parking_location" />
+        </EntityType>
+        <EntityType Name="infringementpicture">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="InfringementId" Type="Int32" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="Location" Type="String" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Name="Longitude" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="Latitude" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="infringement" Relationship="InfringementModel.a2" FromRole="infringementpicture" ToRole="infringement" />
+        </EntityType>
+        <EntityType Name="infringementtype">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Type" Type="String" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Name="Amount" Type="Decimal" Nullable="false" />
+          <Property Name="SortOrder" Type="Int32" />
+          <NavigationProperty Name="infringements" Relationship="InfringementModel.c1" FromRole="infringementtype" ToRole="infringement" />
+        </EntityType>
+        <EntityType Name="make">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="SortOrder" Type="Int32" />
+          <NavigationProperty Name="carmodels" Relationship="InfringementModel.a" FromRole="make" ToRole="carmodel" />
+          <NavigationProperty Name="infringements" Relationship="InfringementModel.b1" FromRole="make" ToRole="infringement" />
+        </EntityType>
+        <EntityType Name="parking_location">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="CityId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Address" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="ImageLocation" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="Longitude" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="Latitude" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="SortOrder" Type="Int32" />
+          <NavigationProperty Name="city" Relationship="InfringementModel.cty" FromRole="parking_location" ToRole="city" />
+          <NavigationProperty Name="city1" Relationship="InfringementModel.a3" FromRole="parking_location" ToRole="city" />
+          <NavigationProperty Name="infringements" Relationship="InfringementModel.a1" FromRole="parking_location" ToRole="infringement" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="LastName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="DateOfBirth" Type="DateTime" />
+          <Property Name="Address1" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="Address2" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="Suburb" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="HomePhone" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="MobilePhone" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="JobTitle" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="PhotoLocation" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="UserType" Type="Int32" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="UserPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="cty">
+          <End Type="InfringementModel.city" Role="city" Multiplicity="1" />
+          <End Type="InfringementModel.parking_location" Role="parking_location" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="city">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="parking_location">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="infringementstatu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="SortOrder" Type="Int32" />
+        </EntityType>
+        <Association Name="a3">
+          <End Type="InfringementModel.city" Role="city" Multiplicity="1" />
+          <End Type="InfringementModel.parking_location" Role="parking_location" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="city">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="parking_location">
+              <PropertyRef Name="CityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="carmodel">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="MakeId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="SortOrder" Type="Int32" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="make" Relationship="InfringementModel.a" FromRole="carmodel" ToRole="make" />
+        </EntityType>
+        <Association Name="a">
+          <End Type="InfringementModel.make" Role="make" Multiplicity="1" />
+          <End Type="InfringementModel.carmodel" Role="carmodel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="make">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="carmodel">
+              <PropertyRef Name="MakeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="country">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CountryName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="infringement">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IncidentTime" Type="DateTime" Nullable="false" />
+          <Property Name="Number" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="Rego" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ParkingLocationId" Type="Int32" Nullable="false" />
+          <Property Name="MakeId" Type="Int32" />
+          <Property Name="Model" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="InfringementTypeId" Type="Int32" Nullable="false" />
+          <Property Name="Amount" Type="Decimal" Nullable="false" />
+          <Property Name="Comment" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Name="User" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="UploadTime" Type="DateTime" />
+          <Property Name="Latitude" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Longitude" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="StatusId" Type="Int32" Nullable="false" />
+          <Property Name="Pay" Type="Boolean" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="OtherMake" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="OtherModel" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="ModelId" Type="Int32" />
+          <Property Name="DueDate" Type="DateTime" />
+          <Property Name="AfterDueDate" Type="Decimal" />
+          <Property Name="OwnerName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Street1" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Street2" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Suburb" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="PostCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CountryId" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="CityName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="OtherInfringementType" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="GeneratedFrom" Type="Int32" />
+          <Property Name="PaymentType" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="parking_location" Relationship="InfringementModel.a1" FromRole="infringement" ToRole="parking_location" />
+          <NavigationProperty Name="infringementpictures" Relationship="InfringementModel.a2" FromRole="infringement" ToRole="infringementpicture" />
+          <NavigationProperty Name="make" Relationship="InfringementModel.b1" FromRole="infringement" ToRole="make" />
+          <NavigationProperty Name="infringementtype" Relationship="InfringementModel.c1" FromRole="infringement" ToRole="infringementtype" />
+          <Property Name="CityId" Type="Int32" />
+        </EntityType>
+        <Association Name="a1">
+          <End Type="InfringementModel.parking_location" Role="parking_location" Multiplicity="1" />
+          <End Type="InfringementModel.infringement" Role="infringement" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="parking_location">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="infringement">
+              <PropertyRef Name="ParkingLocationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="a2">
+          <End Type="InfringementModel.infringement" Role="infringement" Multiplicity="1" />
+          <End Type="InfringementModel.infringementpicture" Role="infringementpicture" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="infringement">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="infringementpicture">
+              <PropertyRef Name="InfringementId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="b1">
+          <End Type="InfringementModel.make" Role="make" Multiplicity="0..1" />
+          <End Type="InfringementModel.infringement" Role="infringement" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="make">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="infringement">
+              <PropertyRef Name="MakeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="c1">
+          <End Type="InfringementModel.infringementtype" Role="infringementtype" Multiplicity="1" />
+          <End Type="InfringementModel.infringement" Role="infringement" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="infringementtype">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="infringement">
+              <PropertyRef Name="InfringementTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="InfringementModelStoreContainer" CdmEntityContainer="infringementEntities">
+          <EntitySetMapping Name="cities">
+            <EntityTypeMapping TypeName="InfringementModel.city">
+              <MappingFragment StoreEntitySet="city">
+                <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="infringementpictures">
+            <EntityTypeMapping TypeName="InfringementModel.infringementpicture">
+              <MappingFragment StoreEntitySet="infringementpictures">
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="InfringementId" ColumnName="InfringementId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="infringementtypes">
+            <EntityTypeMapping TypeName="InfringementModel.infringementtype">
+              <MappingFragment StoreEntitySet="infringementtype">
+                <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="makes">
+            <EntityTypeMapping TypeName="InfringementModel.make">
+              <MappingFragment StoreEntitySet="make">
+                <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="parking_location">
+            <EntityTypeMapping TypeName="InfringementModel.parking_location">
+              <MappingFragment StoreEntitySet="parking_location">
+                <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ImageLocation" ColumnName="ImageLocation" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="CityId" ColumnName="CityId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="users">
+            <EntityTypeMapping TypeName="InfringementModel.user">
+              <MappingFragment StoreEntitySet="user">
+                <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="UserType" ColumnName="UserType" />
+                <ScalarProperty Name="PhotoLocation" ColumnName="PhotoLocation" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
+                <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Suburb" ColumnName="Suburb" />
+                <ScalarProperty Name="Address2" ColumnName="Address2" />
+                <ScalarProperty Name="Address1" ColumnName="Address1" />
+                <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="infringementstatus">
+            <EntityTypeMapping TypeName="InfringementModel.infringementstatu">
+              <MappingFragment StoreEntitySet="infringementstatus">
+                <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="carmodels">
+            <EntityTypeMapping TypeName="InfringementModel.carmodel">
+              <MappingFragment StoreEntitySet="carmodel">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="MakeId" ColumnName="MakeId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="countries">
+            <EntityTypeMapping TypeName="InfringementModel.country">
+              <MappingFragment StoreEntitySet="countries">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="infringements">
+            <EntityTypeMapping TypeName="InfringementModel.infringement">
+              <MappingFragment StoreEntitySet="infringement">
+                <ScalarProperty Name="CityId" ColumnName="CityId" />
+                <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+                <ScalarProperty Name="GeneratedFrom" ColumnName="GeneratedFrom" />
+                <ScalarProperty Name="OtherInfringementType" ColumnName="OtherInfringementType" />
+                <ScalarProperty Name="CityName" ColumnName="CityName" />
+                <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+                <ScalarProperty Name="PostCode" ColumnName="PostCode" />
+                <ScalarProperty Name="Suburb" ColumnName="Suburb" />
+                <ScalarProperty Name="Street2" ColumnName="Street2" />
+                <ScalarProperty Name="Street1" ColumnName="Street1" />
+                <ScalarProperty Name="OwnerName" ColumnName="OwnerName" />
+                <ScalarProperty Name="AfterDueDate" ColumnName="AfterDueDate" />
+                <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+                <ScalarProperty Name="ModelId" ColumnName="ModelId" />
+                <ScalarProperty Name="OtherModel" ColumnName="OtherModel" />
+                <ScalarProperty Name="OtherMake" ColumnName="OtherMake" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Pay" ColumnName="Pay" />
+                <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="UploadTime" ColumnName="UploadTime" />
+                <ScalarProperty Name="User" ColumnName="User" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="InfringementTypeId" ColumnName="InfringementTypeId" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="MakeId" ColumnName="MakeId" />
+                <ScalarProperty Name="ParkingLocationId" ColumnName="ParkingLocationId" />
+                <ScalarProperty Name="Rego" ColumnName="Rego" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="IncidentTime" ColumnName="IncidentTime" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

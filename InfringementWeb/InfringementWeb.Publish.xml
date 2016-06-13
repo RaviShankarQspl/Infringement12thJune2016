@@ -1,0 +1,9 @@
+﻿<publishData>
+    <publishProfile
+  publishUrl="https://primeparking-001-site2.btempurl.com:8172/msdeploy.axd"
+  msdeploySite="primeparking-001-site2"
+  destinationAppUrl="http://primeparking-001-site2.btempurl.com/"
+  profileName="Default Settings"
+  publishMethod="MSDeploy"
+  userName="ifc\primeparking-001" />
+</publishData>

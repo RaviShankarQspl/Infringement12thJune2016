@@ -1,0 +1,154 @@
+﻿@model IList<InfringementCustomerWeb.infringement>
+
+@{
+    ViewBag.Title = "SearchList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/commonfunctions.js"></script>
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <a href="~/Home/Index">
+            <img src="~/Content/images/me_logo_grey_L.jpg" width="350" /><br /><hr style="margin-top: 20px; margin-bottom: 20px; border: 0;   border-top: 3px solid #000000;" />
+        </a>
+    </div>
+</div>
+<h2>Infringement Payments</h2>
+
+<p>
+    We have received payments for the infringements listed in the "Paid" area.   An email has been sent to you with the
+    receipt.  If you have not received a receipt, please re-enter your email address below for another copy.
+</p>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.Label("Reg #")
+            </th>
+            <th>
+                @Html.Label("Inf #")
+            </th>
+            <th>
+                @Html.Label("Date")
+            </th>
+            <th>
+                @Html.Label("Location")
+            </th>
+            <th>
+                @Html.Label("Infringement")
+            </th>
+            @*<th class="hidden-xs">
+                    @Html.Label("Type")
+                </th>*@
+            @*<th>
+                    @Html.Label("Comment")
+                </th>*@
+            <th>
+                @Html.Label("Amount")
+            </th>
+            <th style="min-width:70px;">
+                @Html.Label("Paid")
+            </th>
+        </tr>
+
+        @for (var i = 0; i < Model.Count; i++)
+        {
+            <tr>
+                <td>
+                    @Html.HiddenFor(x => x[i].Id)
+                    @Html.HiddenFor(x => x[i].Amount)
+                    @Html.HiddenFor(x => x[i].StatusId)
+                    @Html.DisplayFor(x => x[i].Rego)
+                </td>
+                <td>
+                    @Html.DisplayFor(x => x[i].Number)
+                </td>
+                <td>
+                    @Html.ValueFor(x => x[i].IncidentTime, "{0:dd/MM/yyyy hh:mm}")
+                </td>
+                <td>
+                    @Html.DisplayFor(x => x[i].parking_location.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(x => x[i].infringementtype.Type)
+                </td>
+                @*<td>
+                        @Html.DisplayFor(x => x[i].infringementtype.Type)
+                    </td>*@
+                @*<td>
+                        @Html.DisplayFor(x => x[i].Comment)
+                    </td>*@
+                <td>
+                    @Html.DisplayFor(x => x[i].ActualAmountToPay)
+                </td>
+                <td>
+                    @*@Model[i].Pay ? "YES" : "NO")*@  Yes
+                </td>
+            </tr>
+        }
+
+    </table>
+
+
+    <div class="row">
+        <div class="form-group">
+            <div class="col-md-6">
+                @Html.TextBox("InfringementIds", "", new { @class = "control-label col-md-8 form-control textboxstyle", @placeholder = "Enter email address for receipt" })
+            </div>
+            <div class="col-md-6">
+                <input type="button" id="Resend" value="Resend Receipt" class="btn btn-default" onclick="ResentMail()" /> &nbsp;&nbsp;&nbsp;&nbsp; <input type="button" id="SearchAgain" value="Pay Another Infringement" class="btn btn-default" onClick="GotoSearch()" /> &nbsp;&nbsp;&nbsp;&nbsp; <input type="button" id="GoToHome" value="Go To Home" class="btn btn-default" onClick="GotoHome()" />
+            </div>
+        </div>
+    </div>
+
+}
+
+<script type="text/javascript">
+    function GotoHome() {
+        //debugger;
+        //window.location = "/Infringement/Search";
+        window.location = "/Home/Index";
+    }
+
+    function GotoSearch() {
+        //debugger;
+        window.location = "/Infringement/Search";
+    }
+
+    function ResentMail() {
+        //debugger;
+        jQuery.support.cors = true;
+        var infringement = {
+        };
+        var email = $("#InfringementIds").val().trim();
+        if (email == null || email == "")
+            alert("Please enterr Email Id to re-send Receipt once again.")
+        else if (!validateEmail(email)) {
+            alert("Please enter Valid Email.");
+            $("#InfringementIds").focus();
+            result = false;
+        }
+        else {
+            $.ajax({
+                //url: 'http://indideveloper-001-site2.btempurl.com/api/infringement/ResendMail',
+                url: '/infringement/ResendMail?mailid=' + email,
+                type: 'POST',
+                data: JSON.stringify(infringement),
+                contentType: "application/json;charset=utf-8",
+                success: function (data) {
+                    //debugger;
+                    //WriteResponse(data);
+                    alert("Mail resent successfully.");
+                },
+                error: function (x, y, z) {
+                    //debugger;
+                    //alert(x.responseText + '\n' + y + '\n' + z);
+                }
+            });
+        }
+    }
+</script>

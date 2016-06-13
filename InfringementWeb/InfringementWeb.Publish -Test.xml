@@ -1,0 +1,9 @@
+﻿<publishData>
+    <publishProfile
+    publishUrl="https://indideveloper-001-site4.atempurl.com:8172/msdeploy.axd"
+    msdeploySite="indideveloper-001-site4"
+    destinationAppUrl="http://indideveloper-001-site4.atempurl.com/"
+    profileName="Default Settings"
+    publishMethod="MSDeploy"
+    userName="ifc\indideveloper-001" />
+</publishData>

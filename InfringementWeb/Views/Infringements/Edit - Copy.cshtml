@@ -1,0 +1,749 @@
+﻿@model InfringementWeb.Models.InfringementModel
+
+@{
+    ViewBag.Title = "Infringement - Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/jquery-ui.css" rel="stylesheet" />
+
+@using  (Html.BeginForm("Edit", "Infringements", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Number">Infringement Number *</label>
+            @*@Html.LabelFor(model => model.Number, htmlAttributes: new { @class = "control-label col-md-2" })*@
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Number, new { htmlAttributes = new { @class = "form-control", @readonly="readonly" } })
+                @Html.ValidationMessageFor(model => model.Number, "", new { @class = "text-danger" })
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Rego">Car Registration Number *</label>
+            @*@Html.LabelFor(model => model.Rego, htmlAttributes: new { @class = "control-label col-md-2" })*@
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Rego, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Rego, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="IncidentTime">Incident Time *</label><span>(DD-MM-YYYY hh:mm)</span>
+            @*@Html.Label("Incident Date & Time", htmlAttributes: new { @class = "control-label col-md-2" })<span>(DD-MM-YYYY hh:mm)</span>*@
+            <div class="col-md-3">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type="text" class = "form-control" name="IncidentTime" id="IncidentTime" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+                @Html.ValidationMessageFor(model => model.IncidentTime, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @Html.HiddenFor(x => x.Number)
+        @Html.HiddenFor(x => x.User)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.StatusId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.StatusId, ViewBag.Status as IEnumerable<SelectListItem>, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.StatusId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2" for="CityId">City *</label>
+            @*@Html.LabelFor(model => model.CityId, htmlAttributes: new { @class = "control-label col-md-2" })*@
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.CityId, ViewBag.Cities as IEnumerable<SelectListItem>,
+               new { @class = "form-control" })
+
+                @Html.ValidationMessageFor(model => model.CityId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="ParkingLocationId">Car Park Building *</label>
+            @*@Html.LabelFor(model => model.ParkingLocationId, htmlAttributes: new { @class = "control-label col-md-2" })*@
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.ParkingLocationId, ViewBag.Buildings as IEnumerable<SelectListItem>, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ParkingLocationId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="MakeId">Car Make *</label>
+            @*@Html.LabelFor(model => model.MakeId, htmlAttributes: new { @class = "control-label col-md-2" })*@
+            <div class="col-md-4">
+                @Html.DropDownListFor(model => model.MakeId, ViewBag.Makes as IEnumerable<SelectListItem>, "--Please Select--",
+               new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MakeId, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-6">
+                @*@Html.CheckBoxFor(m => m.IsOtherMake) @Html.LabelFor(m => m.IsOtherMake)*@
+            </div>
+        </div>
+        <div class="form-group">
+            <span id="lblOtherMake"> @Html.LabelFor(model => model.OtherMake, htmlAttributes: new { @class = "control-label col-md-2" })</span>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.OtherMake, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.OtherMake, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2" for="ModelId">Car Model *</label>
+            @*@Html.LabelFor(model => model.ModelId, htmlAttributes: new { @class = "control-label col-md-2" })*@
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.ModelId, ViewBag.Models as IEnumerable<SelectListItem>, "--Please Select--",
+               new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ModelId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+      
+        
+        <div class="form-group">
+            <span id="lblOtherModel">
+                @Html.LabelFor(model => model.OtherModel, htmlAttributes: new { @class = "control-label col-md-2" })
+            </span>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.OtherModel, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.OtherModel, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="InfringementTypeId">Infringement Type *</label>
+            @*@Html.LabelFor(model => model.InfringementTypeId, htmlAttributes: new { @class = "control-label col-md-2" })*@
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.InfringementTypeId,
+               ViewBag.InfringementTypes as IEnumerable<SelectListItem>,
+               new { @class = "form-control" })
+
+                @Html.ValidationMessageFor(model => model.InfringementTypeId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="Amount">Amount *</label>
+            @*@Html.LabelFor(model => model.Amount, htmlAttributes: new { @class = "control-label col-md-2" })*@
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Amount, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Amount, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <span id="lblOtherInfringementType"> @Html.LabelFor(model => model.OtherInfringementType, htmlAttributes: new { @class = "control-label col-md-2" })</span>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.OtherInfringementType, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.OtherInfringementType, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Comment, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Comment, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Comment, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Latitude, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Latitude, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Latitude, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Longitude, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Longitude, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Longitude, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.Label("Image", new { @class = "control-label col-md-2" })
+            <div class="col-md-8">
+                @*<img src="@Url.Content(model => model.ImagePath)" height="100" id="ImageHolder" />*@
+                <table>
+                    <tr>
+                        @if (@ViewBag.Images != null)
+                {
+                        foreach (var image in ViewBag.Images)
+                            {
+                                <td style="text-align:center" >
+                                    <img src="@Url.Content(image.Location)" height="100" id="ImageHolderuploaded" />
+                                    <br /><br />
+                                    <input type="button" id="popwindow1" value="View" onclick="popwindow(@image.Id)" style=" background-image: url('../../Content/images/edit.PNG'); background-repeat: no-repeat; text-indent: -9999px; height: 27px; width: 25px;" />
+                                    <input type="button" id="deleteimage" value="Remove" onclick="RemoveImage(@image.Id, @image.InfringementId)" style=" background-image: url('../../Content/images/delete.PNG'); background-repeat: no-repeat; text-indent: -9999px; height: 27px; width: 25px;"/>
+
+                                </td>
+                            }
+                }
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <input type="hidden" name="GalleryImageScroll" id="GalleryImageScroll" value="@TempData["GalleryImageScroll"].ToString()" />
+        <input type="hidden" name="ImagesCount" id="ImagesCount" value="@Session["ImagesCount"].ToString()" />
+        <div class="form-group">
+            <label class="control-label col-md-2" for="ImageLatitude">&nbsp;</label>
+            @*@Html.Label("Image", new { @class = "control-label col-md-2" })*@
+            <table border="0" width="70%">
+                <tr>
+                    <td width="30%">
+
+                        <div class="col-md-4">
+                            <img src="@Url.Action("GetImage", "Infringements", new { id = TempData["GalleryImageScroll"].ToString() })" height="100" id="ImageHolder" />
+                        </div>
+
+                    </td>
+                    <td class="imgplace">
+                        <div class="form-group ">
+                            <label class="control-label col-md-2" >Latitude:</label>
+                            @*@Html.LabelFor(model => model.ImageLatitude, htmlAttributes: new { @class = "control-label col-md-3" }) :*@
+                            <div class="col-md-7">
+                                <span class="badge" id="spanLatitude">&nbsp;@TempData["Latitude"]</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-2" >Longitude:</label> 
+                            <div class="col-md-7">
+                                <span class="badge" id="spanLongitude">&nbsp;@TempData["Longitude"]</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-2" >Comment:</label> 
+                            <div class="col-md-7">
+                                <span class="badge" id="spanComment">&nbsp;@TempData["Comment"]</span>
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="form-group">
+            @Html.Label(" ", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @if (@Session["ImagesCount"] != null && Convert.ToInt16(@Session["ImagesCount"].ToString()) >  1 )
+                {
+                        @Html.ActionLink(" ", "Left", new { id = TempData["GalleryImageScroll"].ToString() }, new { @class = "glyphicon glyphicon-arrow-left", @title = "Left", @id = "left" })
+                        @Html.ActionLink(" ", "Right", new { id = TempData["GalleryImageScroll"].ToString() }, new { @class = "glyphicon glyphicon-arrow-right", @title = "Right", @id = "right" })
+                        @*@Html.ActionLink(" ", "Remove", new { id = TempData["GalleryImageScroll"].ToString() }, new { @class = "glyphicon glyphicon-remove", @title = "Remove", @id = "remove" })*@
+                }
+
+                @if (@Session["ImagesCount"] != null && Convert.ToInt16(@Session["ImagesCount"].ToString()) > 0)
+                {
+                    <input id="Submit" name="Submit" type="submit" value="Remove Photo" class="btn btn-default" />
+                }
+
+                <input type="hidden" id="imageid" value="@TempData["GalleryImageScroll"].ToString()" />
+               <br />  <br />
+                <input type="file" id="Image" name="upload" />
+            </div>
+        </div>
+        <div class="pull-right col-lg-10">
+            <div class="form-group">
+                <label class="control-label col-md-2" >Image Latitude:</label>
+                <div class="col-md-7">
+                    @Html.EditorFor(model => model.ImageLatitude, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.ImageLatitude, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-2" >Image Longitude:</label>
+                <div class="col-md-7">
+                    @Html.EditorFor(model => model.ImageLongitude, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.ImageLongitude, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-md-2" >Image Comment:</label>
+                <div class="col-md-7">
+                    @Html.EditorFor(model => model.ImageComment, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.ImageComment, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input id="Submit" name="Submit" type="submit" value="Add Photo" class="btn btn-default" onclick="return CheckImageSelection()" />
+            </div>
+        </div>
+
+        @*====================================*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.DueDate, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @string.Format("{0:dd/MM/yyyy}", Model.DueDate)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.AfterDueDate, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AfterDueDate, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.AfterDueDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Street1, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Street1, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Street1, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Street2, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Street2, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Street2, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Suburb, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Suburb, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Suburb, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.CityName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CityName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CityName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.PostCode, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PostCode, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.PostCode, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.CountryId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CountryId, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.CountryId, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    @*=======================================*@
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input id="Submit" name="Submit" type="submit" value="Save Infringement" class="btn btn-default" onclick="return validateControls()" />
+                @Html.ActionLink("Cancel", "Index","Infringements", new { @class = "btn btn-default" }  )
+            </div>
+        </div>
+    </div>
+
+<input type="hidden" name="TomorrowDate" id="TomorrowDate" value="@ViewBag.TomorrowDate.ToString()" />
+
+<div id="popupdiv" title="Basic modal dialog" style="display: none">
+    <table class="table" >
+       
+        <tr>
+            <td>Latitude</td>
+            <td>:</td>
+            <td><input type="text" id="txtLatitude" name="txtLatitude"  class="form-control" />   </td>
+        </tr>
+        <tr>
+            <td>Longitude</td>
+            <td>:</td>
+            <td><input type="text" id="txtLongitude" name="txtLongitude" class="form-control" /></td>
+        </tr>
+        <tr>
+            <td>Comments</td>
+            <td>:</td>
+            <td><input type="text" id="txtComments" name="txtComments" class="form-control" />
+                <input type="hidden" id="txtImageID" name="txtImageID" />
+            </td>
+        </tr>
+        @*<tr>
+            <td colspan="3" ></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align:center"><input type="button" id="Update" name="Update" value="Update" onclick="UpdateDetails()" /></td>
+        </tr>*@
+    </table>
+</div>
+}
+
+@*<div>
+    @Html.ActionLink("Cancel", "Index")
+</div>*@
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/dateTimePicker")
+    @Scripts.Render("~/bundles/loadBuildings")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/loadCarModels")
+    @Scripts.Render("~/bundles/infringementAmount")
+
+<style type="text/css">
+    .imgplace > .form-group > .control-label {
+        text-align: left;
+    }
+
+    .imgplace > .form-group > .col-md-7 > .badge {
+        margin-top: 10px;
+        min-width: 150px;
+    }
+</style>
+    <script type="text/javascript">
+
+
+
+        function CheckImageSelection()
+        {
+            var filesection = false;
+            //alert("click " + $("#Image").val())
+
+            if ($("#Image").val() != null && $("#Image").val() != "")
+                filesection = true;
+
+            if (filesection == false)
+                alert("Please select image.")
+
+            return filesection;
+        }
+
+        var makename = $("#MakeId option:selected").text();
+        var modelname = $("#ModelId option:selected").text();
+        var inftype = $("#InfringementTypeId option:selected").text();
+
+        $('#OtherMake').hide();
+        $('#OtherModel').hide();
+        $('#lblOtherMake').hide();
+        $('#lblOtherModel').hide();
+
+        $('#OtherInfringementType').hide();
+        $('#lblOtherInfringementType').hide();
+
+
+
+        if (modelname.toLowerCase().indexOf("other") >= 0) {
+
+            $('#OtherModel').show();
+            $('#lblOtherModel').show();
+        }
+        else {
+            $('#OtherModel').hide();
+            $('#lblOtherModel').hide();
+        }
+
+        if (makename.toLowerCase().indexOf("other") >= 0) {
+
+            $('#OtherMake').show();
+            $('#lblOtherMake').show();
+        }
+        else {
+            $('#OtherMake').hide();
+            $('#lblOtherMake').hide();
+        }
+
+        if (inftype.toLowerCase().indexOf("other") >= 0) {
+
+            $('#OtherInfringementType').show();
+            $('#lblOtherInfringementType').show();
+        }
+        else {
+            $('#OtherInfringementType').hide();
+            $('#lblOtherInfringementType').hide();
+        }
+
+        if ($("#GalleryImageScroll").val() == "-1")
+        {
+            $("#right").attr("disabled", true);
+            $("#left").attr("disabled", true);
+        }
+        else
+        {
+            $("#right").attr("disabled", false);
+            $("#left").attr("disabled", false);
+        }
+
+        $("#ImageLatitude").val("0");
+        $("#ImageLongitude").val("0");
+        $("#ImageComment").val("");
+
+        //alert("makename :" + makename);
+
+      /*  $('#remove').click(function () {
+            var iMaxCount = $("#ImagesCount").val();
+            if (iMaxCount == 0)
+                alert("We don not any images to remove.")
+            return false;
+        }); */
+
+        $('#left').click(function () {
+            // debugger
+            var iMaxCount = $("#ImagesCount").val();
+            var pos = $("#GalleryImageScroll").val();
+
+            pos = parseInt(pos);
+
+            if (pos == 0) {
+                alert("We do not have any Previous Images.")
+                return false;
+            }
+
+            if (pos >= 1)
+                pos = pos - 1;
+            else
+                pos = 0;
+
+            if (pos >= 0) {
+                //pos = pos - 1;
+                $("#GalleryImageScroll").val(pos);
+                jQuery.support.cors = true;
+
+                $.ajax({
+                    url: 'http://indideveloper-001-site4.atempurl.com/Infringements/GetImageObject?Id=' + pos,
+                    //url: 'http://localhost:49914/Infringements/GetImageObject?Id=' + pos,
+                    type: 'Get',
+                    data: JSON.stringify(""),
+                    contentType: "application/json;charset=utf-8",
+                    success: function (data) {
+                        //debugger;
+                        //WriteResponse(data);
+                        //$("#ImageHolder").attr("src", data.imagedata);
+                        $("#spanLatitude").text(data.Latitude);
+                        $("#spanLongitude").text(data.Longitude);
+                        $("#spanComment").text(data.Comment);
+                    },
+                    error: function (x, y, z) {
+                        //debugger;
+                        //alert(x.responseText + '\n' + y + '\n' + z);
+                    }
+                });
+                $("#ImageHolder").attr("src", "/Infringements/GetImage/" + pos);
+            }
+
+            return false;
+        });
+        $('#right').click(function () {
+            //debugger;
+            var iMaxCount = $("#ImagesCount").val();
+            var pos = $("#GalleryImageScroll").val();
+            pos = parseInt(pos) + 1;
+
+            if (pos == iMaxCount) {
+                alert("We do not have any Next images.")
+                return false;
+            }
+
+            if (pos < 0)
+                pos = 0;
+
+            else if (pos >= iMaxCount)
+                pos = iMaxCount - 1;
+
+
+
+            if (pos > 0 && pos < iMaxCount) {
+
+                $("#GalleryImageScroll").val(pos);
+
+                jQuery.support.cors = true;
+
+
+                $.ajax({
+                    url: 'http://indideveloper-001-site4.atempurl.com/Infringements/GetImageObject?Id=' + pos,
+                    //url: 'http://localhost:49914/Infringements/GetImageObject?Id=' + pos,
+                    type: 'Get',
+                    data: JSON.stringify(""),
+                    contentType: "application/json;charset=utf-8",
+                    success: function (data) {
+                        //debugger;
+                        //WriteResponse(data);
+                        //$("#ImageHolder").attr("src", data.imagedata);
+                        $("#spanLatitude").text(data.Latitude);
+                        $("#spanLongitude").text(data.Longitude);
+                        $("#spanComment").text(data.Comment);
+                    },
+                    error: function (x, y, z) {
+                        // debugger;
+                        //alert(x.responseText + '\n' + y + '\n' + z);
+                    }
+                });
+
+                $("#ImageHolder").attr("src", "/Infringements/GetImage/" + pos);
+            }
+
+            return false;
+        });
+
+        function SetDateTime()
+        {
+            //debugger;
+            var infringementDateTime = moment("@ViewBag.IncidentTime.ToString()", "MM-DD-YYYY HH:mm");
+                $('#datetimepicker1').datetimepicker({
+                    format: "DD-MM-YYYY HH:mm",
+                    defaultDate: "@ViewBag.IncidentTime.ToString()"
+                });
+        }
+
+        SetDateTime();
+
+        function UpdateDetails()
+        {
+           // debugger;
+            var Latitude = $("#txtLatitude").val();
+            var Longitude = $("#txtLongitude").val();
+            var Comments = $("#txtComments").val();
+            var Id = $("#txtImageID").val();
+
+            if (isNaN(Latitude))
+            {
+                alert("Only Numbers allowed.")
+            }
+            else if (isNaN(Longitude)) {
+                alert("Only Numbers allowed.")
+            }
+            else if (!isNaN(Comments)) {
+                alert("Only Alaphabet is allowed.")
+            }
+            else {
+
+                jQuery.support.cors = true;
+
+
+                $.ajax({
+                    url: "http://indideveloper-001-site4.atempurl.com/Infringements/UpdateImageDetails?id=" + Id + "&Latitude=" + Latitude + "&Longitude=" + Longitude + "&Comments=" + Comments,
+                    type: 'Get',
+                    contentType: "application/json;charset=utf-8",
+                    success: function (data) {
+                        // debugger;
+                        if (data.Result == "Success")
+                            alert("Record Updated.");
+                    },
+                    error: function (x, y, z) {
+                        // debugger;
+                        // alert(x.responseText + '\n' + y + '\n' + z);
+                    }
+                });
+            }
+        }
+
+
+        function RemoveImage(id,infid)
+        {
+            var r = confirm("Are you sure to delete this image!");
+            if (r == true) {
+                jQuery.support.cors = true;
+                $.ajax({
+                    //url: "http://localhost:49914/Infringements/RemoveImageDetails?id=" + id + "&infid=" + infid,
+                    url: "http://indideveloper-001-site4.atempurl.com/Infringements/RemoveImageDetails?id=" + id + "&infid=" + infid,
+                    type: 'Get',
+                    contentType: "application/json;charset=utf-8",
+                    success: function (data) {
+                        // debugger;
+                        if (data.Result == "Success") {
+                            alert("Record Deleted.");
+        //debugger;
+                            //window.Location = "\\Infringements\\Edit\\"+ infid ;
+                            window.location = "/Infringements/Edit/" + infid;
+                        }
+                    },
+                    error: function (x, y, z) {
+                        // debugger;
+                        // alert(x.responseText + '\n' + y + '\n' + z);
+                    }
+                });
+            }
+        }
+        function popwindow(id) {
+            //alert("id :" + id);
+
+            jQuery.support.cors = true;
+
+
+            $.ajax({
+                
+                url: 'http://indideveloper-001-site4.atempurl.com/Infringements/GetImageDetails?id=' + id,
+                //url: 'http://localhost:49914/Infringements/GetImageDetails?id=' + id,
+                type: 'Get',
+                data: JSON.stringify(""),
+                contentType: "application/json;charset=utf-8",
+                success: function (data) {
+                   // debugger;
+
+                    $("#txtLatitude").val(data.Latitude);
+                    $("#txtLongitude").val(data.Longitude);
+                    $("#txtComments").val(data.Comments);
+                    $("#txtImageID").val(data.Id);
+
+                        $("#popupdiv").dialog({
+                            title: "jQuery Popup from Server Side",
+                            width: 480,
+                            height: 350,
+                            modal: true,
+                            buttons: {
+                                Update: function () {
+                                    UpdateDetails();
+                                },
+                                Close: function () {
+                                    $(this).dialog('close');
+                                }
+
+
+                            }
+                        });
+                    //alert("Record Created.");
+                },
+                error: function (x, y, z) {
+                   // debugger;
+                   // alert(x.responseText + '\n' + y + '\n' + z);
+                }
+            });
+
+
+        }
+    </script>
+
+<script>
+    function validateControls()
+    {
+       // debugger;
+        var Tomorrowdate = $("#TomorrowDate").val();
+        var incidenttime = $("#IncidentTime").val();
+
+        bodarraw = incidenttime.split('-');
+        var inputdtring = bodarraw[1] + "/" + bodarraw[0] + "/" + bodarraw[2];
+        incidenttime = new Date(inputdtring);
+
+        bodarraw1 = Tomorrowdate.split('/');
+        var inputdtring1 = bodarraw1[0] + "/" + bodarraw1[1] + "/" + bodarraw1[2];
+        Tomorrowdate = new Date(inputdtring1);
+
+        var result = true;
+
+        if (incidenttime.setHours(0, 0, 0, 0) > Tomorrowdate.setHours(0, 0, 0, 0)) {
+            result = false;
+            alert("Incident Date must not be future Date.")
+            $("#IncidentTime").focus();
+        }
+        return result;
+    }
+
+</script>
+
+}

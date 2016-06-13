@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "MailResponse";
+}
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <a href="~/Home/Index">
+            <img src="~/Content/images/me_logo_grey_L.jpg" width="350" /><br /><hr style="margin-top: 20px; margin-bottom: 20px; border: 0;   border-top: 3px solid #000000;" />
+        </a>
+    </div>
+</div>
+<div class="form-horizontal">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:center">
+            <h4>Your Request has been sent.</h4>
+            <hr />
+
+            &nbsp;&nbsp;&nbsp;&nbsp; <input type="button" id="SearchAgain" value="Go to Home" class="btn btn-default" onClick="GotoHome()" />
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script>
+
+        function GotoHome() {
+            //debugger;
+            window.location = "/Home/Index";
+        }
+    </script>
+}

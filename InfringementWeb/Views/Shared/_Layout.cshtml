@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/themes/base/css")
+    @Styles.Render("~/Content/dateTimePicker")
+
+</head>
+<body style="margin-top:0px;">
+
+    <div class="container-fluid body-content">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <img src="~/Content/images/me_logo_grey_L.jpg" width="350" /><br />
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="text-align:right;margin-top: 40px;">
+                <div>
+                    Welcome <b> @Session["UserFirstName"].ToString()  @Session["UserLastName"].ToString()</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @Html.ActionLink("LogOff", "LogOff", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })&nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <hr style="margin-top: 20px; margin-bottom: 20px; border: 0;   border-top: 3px solid #000000;" />
+        </div>
+        <div class="portlet-body">
+            <div class="form-body">
+
+                <div class="row">
+
+
+                    <div class="form-group">
+
+                        <div class="col-md-2">
+                            <ul class="nav nav-pills nav-stacked">
+                                @if (Session["UserType"] != null && Session["UserType"].ToString() == "1" || Session["UserType"] != null && Session["UserType"].ToString() == "2")
+                                {
+                                    <li @Html.Raw(Request.Path.Contains("Infringements") && (!Request.Path.Contains("Infringements/Search") && !Request.Path.Contains("Infringements/SearchList") && !Request.Path.Contains("Infringements/PayNow") && !Request.Path.Contains("Infringements/Downloads")) ? "class='active'" : string.Empty)>@Html.ActionLink("Infringements", "Index", "Infringements")</li>
+                                    <li @Html.Raw((Request.Path.Contains("Infringements/Search") || Request.Path.Contains("Infringements/SearchList") || Request.Path.Contains("Infringements/PayNow")) ? "class='active'" : string.Empty)>@Html.ActionLink("Make Payment", "Search", "Infringements")</li>
+                                    <li @Html.Raw(Request.Path.Contains("Cities") ? "class='active'" : string.Empty)>@Html.ActionLink("Maintain City", "Index", "Cities")</li>
+                                    <li @Html.Raw(Request.Path.Contains("Building") ? "class='active'" : string.Empty)>@Html.ActionLink("Maintain Building", "Index", "Building")</li>
+                                    <li @Html.Raw(Request.Path.Contains("Makes") ? "class='active'" : string.Empty)>@Html.ActionLink("Maintain Make", "Index", "Makes")</li>
+                                    <li @Html.Raw(Request.Path.Contains("CarModels") ? "class='active'" : string.Empty)>@Html.ActionLink("Maintain Model", "Index", "CarModels")</li>
+                                    <li @Html.Raw(Request.Path.Contains("InfringementTypes") ? "class='active'" : string.Empty)>@Html.ActionLink("Infringement Types", "Index", "InfringementTypes")</li>
+                                    <li @Html.Raw(Request.Path.Contains("Downloads") ? "class='active'" : string.Empty)>@Html.ActionLink("Downloads", "Downloads", "Infringements")</li>
+                                }
+
+                                @if (Session["UserType"] != null && Session["UserType"].ToString() == "1")
+                                {
+                                    <li @Html.Raw(Request.Path.Contains("Users") ? "class='active'": string.Empty)>@Html.ActionLink("Maintain Users", "Index", "Users")</li>
+                                }
+                                    @*<li @Html.Raw(Request.Path.Contains("InfringementPictures") ? "class='active'": string.Empty)>@Html.ActionLink("Infringement Pictures", "Index", "InfringementPictures")</li>*@
+                                </ul>
+                            </div>
+
+                            <div class="col-md-10">
+
+                                <div class="portlet-body">
+                                    <div class="form-body">
+
+                                        <fieldset>
+                                            <legend>@ViewBag.Title</legend>
+
+                                            @RenderBody()
+
+                                        </fieldset>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <hr />
+            <footer id="footer">
+                @*<p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>*@
+            </footer>
+
+        </div>
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+
+        @Scripts.Render("~/bundles/jquery.validate.min")
+        @Scripts.Render("~/bundles/jquery.validate.unobtrusive.min")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

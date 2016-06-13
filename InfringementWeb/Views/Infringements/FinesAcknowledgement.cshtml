@@ -1,0 +1,135 @@
+﻿@model IList<InfringementWeb.infringement>
+
+@{
+    ViewBag.Title = "SearchList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/commonfunctions.js"></script>
+<h2>Infringement Payments</h2>
+
+<p>We have received payments for the infringements listed in the "Paid" area.   An email has been sent to you with the
+    receipt.  If you have not received a receipt, please re-enter your email address below for another copy.</p>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.Label("Registration")
+        </th>
+        <th>
+            @Html.Label("Infringement#")
+        </th>
+        <th>
+            @Html.Label("Date Time")
+        </th>
+       
+        <th class="hidden-xs">
+            @Html.Label("Infringement Type")
+        </th>
+        
+        <th>
+            @Html.Label("Amount")
+        </th>
+        <th style="min-width:70px;">
+            @Html.Label("Paid")
+        </th>
+    </tr>
+    
+@for (var i = 0; i < Model.Count; i++)
+{
+    <tr>
+        <td>
+            @Html.HiddenFor(x => x[i].Id)
+            @Html.HiddenFor(x => x[i].Amount)
+            @Html.HiddenFor(x => x[i].StatusId)
+            @Html.DisplayFor(x => x[i].Rego)
+        </td>
+        <td>
+            @Html.DisplayFor(x => x[i].Number)
+        </td>
+        <td>
+            @Html.ValueFor(x => x[i].IncidentTime, "{0:dd/MM/yyyy hh:mm}")
+            @*@Html.DisplayFor(x => x[i].IncidentTime)*@
+        </td>
+        @*<td>
+            @Html.DisplayFor(x => x[i].ParkingLocationId)
+        </td>*@
+        <td>
+            @Html.DisplayFor(x => x[i].infringementtype.Type)
+        </td>
+        @*<td>
+            @Html.DisplayFor(x => x[i].Comment)
+        </td>*@
+        <td>
+            @Html.DisplayFor(x => x[i].ActualAmountToPay)
+        </td>
+        <td>
+           Yes
+                @*@(Model.Pay?"Yes":"No")*@
+            
+        </td>
+    </tr>
+}
+
+</table>
+<br />
+<div>Total Amount Paid: @ViewData["totalamount"]</div>
+
+<div class="row">
+    <div class="form-group">
+        <div class="col-md-8">
+            @Html.TextBox("InfringementIds", "", new { @class = "control-label col-md-8 form-control textboxstyle", @placeholder = "Enter email address for receipt" })
+        </div>
+        <div class="col-md-4">
+            <input type="button" id="Resend" value="Resend email" class="btn btn-default" onclick="ResentMail()" />&nbsp;&nbsp;&nbsp;&nbsp; <input type="button" id="SearchAgain" value="Home - Search Again" class="btn btn-default" onClick="GotoHome()" />
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    function GotoHome() {
+        //debugger;
+        window.location = "/Infringements/Search";
+    }
+     function ResentMail()
+    {
+         //debugger;
+         jQuery.support.cors = true;
+         var infringement = {
+         };
+         
+         var email = $("#InfringementIds").val().trim();
+         if (email == null || email == "")
+             alert("Please enterr Email Id to re-send Receipt once again.")
+         else if (!validateEmail(email)) {
+             alert("Please enter Valid Email.");
+             $("#InfringementIds").focus();
+             result = false;
+         }
+         else {
+             $.ajax({
+                 //url: 'http://primeparking-001-site5.ctempurl.com/api/infringement/ResendMail',
+                 url: '/infringements/ResendMail?mailid=' + email,
+                 type: 'POST',
+                 data: JSON.stringify(infringement),
+                 contentType: "application/json;charset=utf-8",
+                 success: function (data) {
+                     //debugger;
+                     //WriteResponse(data);
+                     alert("Mail resent successfully.");
+                 },
+                 error: function (x, y, z) {
+                     //debugger;
+                     //alert(x.responseText + '\n' + y + '\n' + z);
+                 }
+             });
+         }
+
+    }
+</script>
+
+}

@@ -1,0 +1,243 @@
+﻿@model IEnumerable<InfringementWeb.infringement>
+@{
+    ViewBag.Title = "Infringements";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-10">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        Search for Infringement Number
+    </div>
+
+    @using (Html.BeginForm("Downloads", "Infringements", FormMethod.Post))
+    {
+        <div class="col-md-3">
+            <input name="SearchInfringeNumber" class="form-control" id="SearchInfringeNumber" type="text" placeholder="Search" value="@ViewData["SearchINO"]">
+            @*@Html.TextBox("SearchInfringeNumber", null, new { @class = "form-control", placeholder = "Search" })*@
+        </div>
+        <div class="col-md-5">
+            <input id="Submit" name="Submit" type="submit" value="Search Infringement" class="btn btn-default" />
+        </div>
+    }
+</div>
+<br />
+<div class="row">
+    <div class="col-md-4">
+        Search for Rego Number
+    </div>
+    @using (Html.BeginForm("Downloads", "Infringements"))
+    {
+        <div class="col-md-3">
+            <input name="SearchRegoNumber" class="form-control" id="SearchRegoNumber" type="text" placeholder="Search" value="@ViewData["RegNo"]">
+            @*@Html.TextBox("SearchRegoNumber", null, new { @class = "form-control", placeholder = "Search" })*@
+        </div>
+        <div class="col-md-5">
+            <input id="Submit" name="Submit" type="submit" value="Search RegNo" class="btn btn-default" />
+        </div>
+    }
+</div>
+<br />
+<div class="row">
+    @using (Html.BeginForm("Downloads", "Infringements"))
+    {
+        <div class="col-md-2">
+            Infringement From
+        </div>
+        <div class="col-md-3">
+            <div class='input-group date' id='datepicker1'>
+                <input type='text' class="form-control datepicker" id="SearchFrom" name="SearchFrom" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            Infringement To
+        </div>
+        <div class="col-md-3">
+            <div class='input-group date' id='datepicker2'>
+                <input type='text' class="form-control datepicker" id="SearchTo" name="SearchTo" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <input id="Submit" name="Submit" type="submit" value="Search by Date" class="btn btn-default" />
+        </div>
+    }
+</div>
+<br />
+
+<div class="row">
+    <div class="col-md-10">
+        <ul><li>Put * at end for wild card searching. Ex: abc*</li></ul>
+    </div>
+    <div class="col-md-2">
+        @*@Html.ActionLink("Create New", "Create")*@
+        <input type="submit" value="Downloads Infringement" class="btn btn-primary right" onclick="window.location.assign('/Infringements/DownloadInfList');" />
+    </div>
+</div>
+
+
+<br />
+<hr />
+<div class="table-responsive">
+
+    <table class="table table-striped">
+        <tr>
+            <th>
+                @*@Html.DisplayNameFor(model => model.Number)*@
+                Infringement Number
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.Rego)*@
+                Rego
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.parking_location.city.name)*@
+                City
+            </th>
+            <th class="hidden-xs hidden-md">
+                @*@Html.DisplayNameFor(model => model.parking_location.Name)*@
+                Car Park
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.IncidentTime)*@
+                Incident Date
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.infringementtype.Type)*@
+                Infringement Type
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Amount)
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.StatusId)*@
+                Status
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.Comment)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Model)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.User)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UploadTime)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Latitude)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Longitude)
+                </th>
+                <th style="min-width:70px;">
+                    Actions
+                </th>*@
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Number)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rego)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.parking_location.city.name)
+                </td>
+                <td class="hidden-xs hidden-md">
+                    @Html.DisplayFor(modelItem => item.parking_location.Name)
+                </td>
+                <td>
+                    @string.Format("{0:dd/MM/yyyy HH:mm}", item.IncidentTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.infringementtype.Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Amount)
+                </td>
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.make.Name)
+                    </td>*@
+                <td>
+                    @switch (item.StatusId)
+                    {
+                        case 1:
+                            <span>Pending</span>
+                            break;
+                        case 2:
+                            <span>Paid</span>
+                            break;
+                        case 3:
+                            <span>Objected</span>
+                            break;
+                        case 4:
+                            <span>Cancelled</span>
+                            break;
+                    }
+                </td>
+                @*
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Comment)
+                    </td><td>
+                        @Html.DisplayFor(modelItem => item.Model)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.User)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UploadTime)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Latitude)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Longitude)
+                    </td>*@
+                <td>
+
+                    @*@Html.ActionLink(" ", "Details", new { id = item.Id }, new { @class = "glyphicon glyphicon-info-sign", @title = "Details" })*@
+
+                </td>
+            </tr>
+        }
+    </table>
+
+</div>
+
+
+
+@*@Html.ActionLink("Test Infringement", "/TestWebMethods/Index")*@
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/dateTimePicker")
+    @Scripts.Render("~/bundles/jqueryui")
+}
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script>
+
+    $(document).ready(function () {
+        debugger;
+        if ('@TempData["DateFrom"]' != '') {
+            var fdate = '@TempData["DateFrom"]';
+            $("#SearchFrom").val(fdate);
+        }
+        if ('@TempData["DateTo"]' != '') {
+            var tdate = '@TempData["DateTo"]';
+            $("#SearchTo").val(tdate);
+        }
+    });
+</script>
